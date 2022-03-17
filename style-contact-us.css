@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #DBA988;
+  --secondary-color: #162C3A;
+  --light: rgba(201, 125, 80, 0.1);
+  --ternary-color: #DBA988;
+}
+
+@font-face {
+  font-family: 'YesevaOne';
+  src: url('/Polices/YesevaOne.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('/Polices/JosefinSans.ttf') format('truetype');
+}
+
+h1 {
+  font-family: 'YesevaOne', cursive;
+  color: var(--primary-color);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
