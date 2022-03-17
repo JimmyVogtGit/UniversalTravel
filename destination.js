@@ -9,17 +9,17 @@ const textPicture = [
 
     {
         name: "Millenium Bridge",
-        picture: "/Images/djerba.jpg"
+        picture: "/Images/milleniumBridge.jpg"
     },
 
     {
         name: "Le Christ Church College",
-        picture: "/Images/djerba.jpg"
+        picture: "/Images/christChurch.jpg"
     },
 
     {
         name: "Alnwick Castle",
-        picture: "/Images/djerba.jpg"
+        picture: "/Images/chateauHp.jpg"
     }
 
 
