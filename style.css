@@ -32,10 +32,9 @@ header {
 
 
 .hamburger {
-  position: fixed;
   z-index: 100;
   padding: 4px;
-  border: var(--primary-color) 1px;
+  border: red 10px;
   background: var(--secondary-color);
   cursor: pointer;
 }
@@ -63,6 +62,7 @@ a {
   font-family: 'JosefinSans';
   text-decoration: none;
   color: var(--primary-color);
+  text-align: center;
 }
 
 .showMenu {
