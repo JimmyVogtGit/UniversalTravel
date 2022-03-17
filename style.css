@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #DBA988;
+  --secondary-color: #162C3A;
+  --light: rgba(201, 125, 80, 0.1);
+  --ternary-color: #DBA988;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light);
+}
+
+header {
+  background-color: var(--secondary-color);
+}
