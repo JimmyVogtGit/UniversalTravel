@@ -4,6 +4,11 @@
     --additional-color: rgba(217, 124, 80, 0.1);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .photo-present {
     height: 580px;
     width: auto;
@@ -11,8 +16,20 @@
     background-size: cover;
 }
 
+.photo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
 .photo-text div {
     height: 360px;
     width: auto;
     background-size: cover;
+    margin-bottom: 3rem;
+}
+
+.photo-text h2 {
+    margin: 0;
+    padding: 0;
 }
