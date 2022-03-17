@@ -7,6 +7,12 @@
 .photo-present {
     height: 580px;
     width: auto;
-    background-image: url(Images/voiture_hp.jpg);
+    background-image: url(Images/harryPotterCuidich.jpg);
+    background-size: cover;
+}
+
+.photo-text div {
+    height: 360px;
+    width: auto;
     background-size: cover;
 }

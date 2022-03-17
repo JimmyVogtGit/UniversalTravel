@@ -3,22 +3,22 @@ const target = document.querySelector(".photo-text");
 const textPicture = [
 
     {
-        name: "titi",
+        name: "Gare de KingsCross",
         picture: "/Images/KingsCross.jpg"
     },
 
     {
-        name: "tata",
+        name: "Millenium Bridge",
         picture: "/Images/djerba.jpg"
     },
 
     {
-        name: "toto",
+        name: "Le Christ Church College",
         picture: "/Images/djerba.jpg"
     },
 
     {
-        name: "tete",
+        name: "Alnwick Castle",
         picture: "/Images/djerba.jpg"
     }
 
