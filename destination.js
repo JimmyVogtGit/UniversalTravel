@@ -15,7 +15,13 @@ const textPicture = [
     {
         name: "toto",
         picture: "/Images/djerba.jpg"
+    },
+
+    {
+        name: "tete",
+        picture: "/Images/djerba.jpg"
     }
+
 
 ];
 
