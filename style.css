@@ -1,15 +1,19 @@
 :root {
   --primary-color: #DBA988;
   --secondary-color: #162C3A;
-  --light: rgba(201, 125, 80, 0.1);
+  --secondary-light: rgba(22, 44, 58, 0.6);
   --ternary-color: #DBA988;
+  --ternary-light: rgba(201, 125, 80, 0.1);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: var(--light);
+}
+
+html {
+  background-color: var(--ternary-light);
 }
 
 @font-face {
@@ -30,14 +34,17 @@ header {
   height: 3rem;
 }
 
-
 .hamburger {
+  position: fixed;
   z-index: 100;
+  top: 1rem;
+  right: 1rem;
   padding: 4px;
-  border: red 10px;
+  border: var(--secondary-color) solid 1px;
   background: var(--secondary-color);
   cursor: pointer;
 }
+
 
 .closeIcon {
   display: none;
@@ -50,19 +57,21 @@ header {
   top: 0;
   left: 150px;
   right: 0;
-  bottom: 0;
+  bottom: 350px;
   z-index: 99;
-  background: var(--secondary-color);
-  color: var(--primary-color);
+  background: var(--secondary-light);
   list-style: none;
   padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 a {
   font-family: 'JosefinSans';
   text-decoration: none;
   color: var(--primary-color);
-  text-align: center;
 }
 
 .showMenu {
