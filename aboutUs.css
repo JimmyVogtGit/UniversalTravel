@@ -1,3 +1,10 @@
+:root{
+    --text-color: rgb(219,169,136);
+    --primary-color: rgb(22,44,58);
+    --secondary-color: rgba(217,124,80,0.1);
+    --third-color: rgb(217,124,80);
+}
+
 @font-face {
     font-family: 'YesevaOne';
     src: url('/Polices/YesevaOne.ttf') format('truetype');
@@ -5,4 +12,23 @@
 @font-face {
     font-family: 'JosefinSans';
     src: url('/Polices/JosefinSans.ttf') format('truetype');
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+img {
+    border-radius: 50%;
+}
+
+.h2Team {
+    color: var(--primary-color);
+    background-color: var(--third-color);
+}
+
+.storyTeam {
+    color: var(--text-color);
+    background-color: var(--primary-color);
 }

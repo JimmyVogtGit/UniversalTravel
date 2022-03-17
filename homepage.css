@@ -2,6 +2,13 @@
     --text-color: rgb(219,169,136);
     --background-color: rgb(22,44,58);
     --additional-color: rgba(217,124,80,0.1);
+    
+}
+
+*{
+   margin:0;
+   padding: 0; 
+   box-sizing: border-box;
 }
 
 @font-face {
@@ -15,12 +22,13 @@
 }
 
 h1{
-    font-family: 'YesevaOne', Elegant;
+    font-family: 'YesevaOne', 'Times New Roman', Times, serif;
+    font-size: 28px;
 }
 
 main{
     background-color:var(--additional-color);
-    font-family: 'JosefinSans', ;
+    font-family: 'JosefinSans', Georgia, 'Times New Roman', Times, serif ;
 }
 
 
@@ -28,7 +36,8 @@ main{
 .hero{
     width: 100%;
     height: 580px;
-    background-image: url(images/lotr-hobbiton.jpg);
+    background-image: url(Images/lotr-hobbiton.jpg);
+    background-size: cover;
 }
 
 .searchbar{
@@ -40,6 +49,7 @@ main{
 }
 
 /* Discover-cards */
+
 .discover-button{
     background-color: var(--background-color);
     color: var(--text-color);
@@ -53,19 +63,22 @@ main{
 }           
 
 .card-discover1{
-    background-image: url(images/lotr-argonath.jpg);
+    background-image: url(Images/lotr-argonath.jpg);
+    background-size: cover;
     width: 100%;
     height: 214px;
 }
 
 .card-discover2{
-    background-image: url(images/naboo.jpg);
+    background-image: url(Images/naboo.jpg);
+    background-size: cover;
     width: 100%;
     height: 214px;
 }
 
 .card-discover3{
-    background-image: url(images/hp_Glenfinnan-train.jpg);
+    background-image: url(Images/hp_Glenfinnan-train.jpg);
+    background-size: cover;
     width: 100%;
     height: 214px;
 }
@@ -76,27 +89,58 @@ main{
     color: var(--text-color);
     width: 100%;
     height: 620px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+.presentation h2{
+    font-size: 24px;
+}
+
+.quote{
+    font-weight: bold;
+    font-style: italic;
+}
 /* Pourquoi nous choisir ? */
-.card-img-left{
-
-}
 .card-img-left1{
-
+    width: 60%;
+    height: 100px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 15px;
 }
 .card-img-left2{
-
-}
-
-.card-img-right{
-
+    width: 60%;
+    height: 100px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 15px;
 }
 
 .card-img-right1{
-
+    width: 60%;
+    height: 100px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
 }
 
 .card-img-right2{
-
+    width: 60%;
+    height: 100px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
 }
