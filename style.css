@@ -14,13 +14,17 @@
 
 header {
   background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-around;
+  height: 3rem;
 }
+
 
 .hamburger {
   position: fixed;
   z-index: 100;
-  top: 1rem;
-  right: 1rem;
+  /* top: 1rem;
+  right: 1rem; */
   padding: 4px;
   border: var(--primary-color) 1px;
   background: var(--secondary-color);
