@@ -12,21 +12,29 @@
   background-color: var(--light);
 }
 
+@font-face {
+  font-family: 'YesevaOne';
+  src: url('/Polices/YesevaOne.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('/Polices/JosefinSans.ttf') format('truetype');
+}
+
 header {
   background-color: var(--secondary-color);
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 3rem;
 }
 
 
 .hamburger {
-  position: fixed;
   z-index: 100;
-  /* top: 1rem;
-  right: 1rem; */
   padding: 4px;
-  border: var(--primary-color) 1px;
+  border: red 10px;
   background: var(--secondary-color);
   cursor: pointer;
 }
@@ -40,7 +48,7 @@ header {
   transform: translateY(-100%);
   transition: transform 0.2s;
   top: 0;
-  left: 0;
+  left: 150px;
   right: 0;
   bottom: 0;
   z-index: 99;
@@ -50,9 +58,11 @@ header {
   padding-top: 4rem;
 }
 
-.menuItem a {
+a {
+  font-family: 'JosefinSans';
   text-decoration: none;
   color: var(--primary-color);
+  text-align: center;
 }
 
 .showMenu {
