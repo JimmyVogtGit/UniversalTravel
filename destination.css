@@ -7,6 +7,6 @@
 .photo-present {
     height: 580px;
     width: auto;
-    background-image: url(Images/trainhp.jpg);
-    background-size: auto;
+    background-image: url(Images/voiture_hp.jpg);
+    background-size: cover;
 }
