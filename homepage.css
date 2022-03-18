@@ -49,7 +49,9 @@ main{
     color: var(--text-color);
     width: 279px;
     height: 51px;
-    border-radius: 20;
+    border-radius: 20px;
+    text-align: center;
+    display: ;
 }
 
 /* Discover-cards */
@@ -145,7 +147,13 @@ main{
     
 }
 
-img{
+.card-img-left img{
+    border-radius: 50%;
+    width: 20%;
+    height: 100px;
+}
+
+.card-img-right img{
     border-radius: 50%;
     width: 20%;
     height: 100px;
