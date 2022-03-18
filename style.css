@@ -1,7 +1,7 @@
 :root {
   --primary-color: #DBA988;
   --secondary-color: #162C3A;
-  --secondary-light: rgba(22, 44, 58, 0.6);
+  --secondary-light: rgba(22, 44, 58, 0.8);
   --ternary-color: #DBA988;
   --ternary-light: rgba(201, 125, 80, 0.1);
 }
@@ -32,19 +32,15 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 3rem;
+  position: fixed;
 }
 
 .hamburger {
-  position: fixed;
+  /* position: fixed; */
   z-index: 100;
-  top: 1rem;
-  right: 1rem;
   padding: 4px;
-  border: var(--secondary-color) solid 1px;
-  background: var(--secondary-color);
   cursor: pointer;
 }
-
 
 .closeIcon {
   display: none;
