@@ -69,6 +69,7 @@ a {
   font-family: 'JosefinSans';
   text-decoration: none;
   color: var(--primary-color);
+  text-align: center;
 }
 
 .showMenu {
@@ -85,7 +86,7 @@ a {
 
 .social-icons {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 @media screen and (min-width: 601px) {
