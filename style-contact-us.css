@@ -29,6 +29,7 @@ h2 {
   padding: 1rem 1rem;
   max-width: 65ch;
   align-items: center;
+  margin-top: calc(60px + 2rem);
 }
 
 .form-container {
