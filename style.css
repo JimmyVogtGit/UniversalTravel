@@ -74,6 +74,19 @@ a {
   transform: translateY(0);
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: var(--secondary-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
 @media screen and (min-width: 601px) {
   .hamburger {
     display: none;
