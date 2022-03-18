@@ -5,20 +5,6 @@
     --ternary-light: rgba(201, 125, 80, 0.1);
 }
 
-
-/* KeyFrames animation */
-
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
 @font-face {
     font-family: 'YesevaOne';
     src: url('/Polices/YesevaOne.ttf') format('truetype');
@@ -43,7 +29,7 @@ header {
 .photo-present {
     height: 580px;
     width: auto;
-    background-image: url(Images/harryPotterCuidich.jpg);
+    background-image: url(Images/harryPotterQuidditch.jpg);
     background-size: cover;
     margin-bottom: 1rem;
 }
@@ -64,8 +50,7 @@ header {
     height: 360px;
     width: auto;
     background-size: cover;
-    margin-bottom: 5rem;
-    border-radius: 50%;
+    margin-bottom: 2rem;
 }
 
 .photo-text h2 {
