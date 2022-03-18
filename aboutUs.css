@@ -19,21 +19,39 @@ body {
     color: var(--primary-color);
 }
 
+h1 {
+    text-align: center;
+}
+
 .team {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20rem;
+    margin: 10rem;
     justify-content: space-between;
+}
+
+.travelAgent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
 }
 
 .h2Team {
     color: var(--primary-color);
     background-color: var(--third-color);
+    text-align: center;
 }
 
 img {
     border-radius: 50%;
+    max-width: 50%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
 }
 
 .storyTeam {
