@@ -104,43 +104,45 @@ main{
     font-style: italic;
 }
 /* Pourquoi nous choisir ? */
-.card-img-left1{
-    width: 60%;
-    height: 100px;
-    background-color: var(--background-color);
-    color: var(--text-color);
+.card-img-left{
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    border-radius: 15px;
+    justify-content: space-around;
+    padding: 1rem;
 }
-.card-img-left2{
+
+.card-img-left p{
     width: 60%;
     height: 100px;
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
+    text-align: center;
     border-radius: 15px;
 }
 
-.card-img-right1{
-    width: 60%;
-    height: 100px;
-    background-color: var(--background-color);
-    color: var(--text-color);
+.card-img-right{
     display: flex;
-    align-items: center;
-    border-radius: 15px;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
-.card-img-right2{
+.card-img-right p{
     width: 60%;
     height: 100px;
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
+    text-align: center;
     align-items: center;
+    justify-content: center;
     border-radius: 15px;
+    
+}
+
+img{
+    border-radius: 50%;
+    width: 20%;
+    height: 100px;
 }
