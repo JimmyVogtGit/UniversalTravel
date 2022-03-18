@@ -54,6 +54,9 @@ h2 {
 .form-container textarea {
   font-family: 'JosefinSans';
   font-size: 20px;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 0.5rem;
 }
 
 .form-container textarea {
@@ -65,13 +68,11 @@ h2 {
   justify-content: center;
 }
 
-.button-submit {
+#button-submit {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  align-items: center;
   border: solid 1px var(--primary-color);
   border-radius: 20px;
   width: 190px;
-  height: 33px;
   cursor: pointer;
 }
