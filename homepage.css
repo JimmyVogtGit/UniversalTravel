@@ -35,7 +35,7 @@ main{
 /* Hero */
 .hero{
     width: 100%;
-    height: 580px;
+    height: 100vh;
     background-image: url(Images/lotr-hobbiton.jpg);
     background-size: cover;
     display: flex;
@@ -47,11 +47,21 @@ main{
 .searchbar{
     background-color: var(--background-color);
     color: var(--text-color);
-    width: 279px;
-    height: 51px;
+    width: 75%;
+    height: 3rem;
     border-radius: 20px;
     text-align: center;
-    display: ;
+    display: flex;
+    align-items: center;
+}
+
+.hero p{
+    border-right: solid var(--text-color);
+}
+
+.hero img{
+    padding-left: 0.5rem;
+    padding-right: 1rem;
 }
 
 /* Discover-cards */
@@ -73,6 +83,10 @@ main{
     background-size: cover;
     width: 100%;
     height: 214px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1rem;    
 }
 
 .card-discover2{
@@ -80,6 +94,10 @@ main{
     background-size: cover;
     width: 100%;
     height: 214px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1rem;    
 }
 
 .card-discover3{
@@ -87,6 +105,10 @@ main{
     background-size: cover;
     width: 100%;
     height: 214px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1rem;    
 }
 
 /* Presentation */
@@ -100,21 +122,30 @@ main{
     align-items: center;
     flex-direction: column;
 }
+.presentation h1{
+    padding: 2rem;
+}
 
 .presentation h2{
     font-size: 24px;
+    
 }
 
 .quote{
     font-weight: bold;
     font-style: italic;
 }
+
+.presentation img{
+    padding: 2.5rem;
+}
+
 /* Pourquoi nous choisir ? */
 .card-img-left{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 0.75rem;
 }
 
 .card-img-left p{
@@ -126,12 +157,13 @@ main{
     align-items: center;
     text-align: center;
     border-radius: 15px;
+    padding: 0.5rem;
 }
 
 .card-img-right{
     display: flex;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 0.75rem;
 }
 
 .card-img-right p{
@@ -144,6 +176,7 @@ main{
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    padding: 00.5rem;
     
 }
 
