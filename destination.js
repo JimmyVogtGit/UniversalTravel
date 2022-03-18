@@ -3,22 +3,22 @@ const target = document.querySelector(".photo-text");
 const textPicture = [
 
     {
-        name: "Gare de KingsCross",
+        name: "Step 1 : Gare de KingsCross",
         picture: "/Images/KingsCross.jpg"
     },
 
     {
-        name: "Millenium Bridge",
+        name: "Step 2 : Millenium Bridge",
         picture: "/Images/milleniumBridge.jpg"
     },
 
     {
-        name: "Le Christ Church College",
+        name: "Step 3 : Christ Church College",
         picture: "/Images/christChurch.jpg"
     },
 
     {
-        name: "Alnwick Castle",
+        name: "Step 4 : Alnwick Castle",
         picture: "/Images/chateauHp.jpg"
     }
 

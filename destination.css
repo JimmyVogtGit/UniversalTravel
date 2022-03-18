@@ -5,6 +5,20 @@
     --ternary-light: rgba(201, 125, 80, 0.1);
 }
 
+
+/* KeyFrames animation */
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
 @font-face {
     font-family: 'YesevaOne';
     src: url('/Polices/YesevaOne.ttf') format('truetype');
@@ -37,7 +51,8 @@ header {
 .present-voyage {
     height: 580px;
     width: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .photo-text {
@@ -49,7 +64,7 @@ header {
     height: 360px;
     width: auto;
     background-size: cover;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     border-radius: 50%;
 }
 
@@ -67,4 +82,16 @@ header {
 .picture {
     display: flex;
     flex-direction: column-reverse;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.quizz {
+    height: 380px;
+    background-color: aqua;
+}
+
+footer {
+    height: 56px;
+    background-color: brown;
 }
