@@ -38,6 +38,10 @@ main{
     height: 580px;
     background-image: url(Images/lotr-hobbiton.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 2rem;
 }
 
 .searchbar{
