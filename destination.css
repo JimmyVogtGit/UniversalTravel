@@ -32,4 +32,6 @@ body {
 .photo-text h2 {
     margin: 0;
     padding: 0;
+    background-color: aqua;
+    text-align: center;
 }
