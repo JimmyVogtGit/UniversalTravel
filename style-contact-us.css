@@ -16,6 +16,21 @@
   src: url('/Polices/JosefinSans.ttf') format('truetype');
 }
 
+h2 {
+  font-family: 'JosefinSans';
+  font-size: 24px;
+  text-align: center;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  padding: 1rem 1rem;
+  max-width: 65ch;
+  align-items: center;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -28,21 +43,6 @@
 .form-container label {
   font-family: 'JosefinSans';
   color: var(--secondary-color);
-}
-
-h2 {
-  font-family: 'JosefinSans';
-  font-size: 24px;
-  text-align: center;
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  margin-left: 1rem;
-  margin-right: 1rem;
-  border-radius: 15px;
-  margin-top: calc(60px + 2rem);
-  padding: 1rem 1rem;
-  max-width: 65ch;
-  align-items: center;
 }
 
 /* @media screen and (min-width: 601px) {
