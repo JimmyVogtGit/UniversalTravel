@@ -31,11 +31,6 @@ function callTextPicture(title, picture) {
     createDiv.classList.add("text-picture")
     target.appendChild(createDiv);
 
-    const createTitle = document.createElement("h2");
-    createTitle.classList.add("title");
-    createTitle.innerHTML = `${title}`;
-    createDiv.appendChild(createTitle);
-
     const createPicture = document.createElement("div");
     createPicture.classList.add("picture");
     /* View in Htlm the image rendering */
@@ -43,7 +38,15 @@ function callTextPicture(title, picture) {
     createPicture.style.width = "auto";*/
     createPicture.style.backgroundImage = `url(${picture})`;
     createDiv.appendChild(createPicture);
+
+
+    const createTitle = document.createElement("h2");
+    createTitle.classList.add("title");
+    createTitle.innerHTML = `${title}`;
+    createPicture.appendChild(createTitle);
 }
+
+
 
 for (let el in textPicture) {
     callTextPicture(textPicture[el].name, textPicture[el].picture);
