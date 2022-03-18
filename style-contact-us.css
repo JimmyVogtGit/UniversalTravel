@@ -1,8 +1,9 @@
 :root {
   --primary-color: #DBA988;
   --secondary-color: #162C3A;
-  --light: rgba(201, 125, 80, 0.1);
+  --secondary-light: rgba(22, 44, 58, 0.8);
   --ternary-color: #DBA988;
+  --ternary-light: rgba(201, 125, 80, 0.1);
 }
 
 @font-face {
@@ -17,7 +18,9 @@
 
 h1 {
   font-family: 'YesevaOne', cursive;
-  color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 28px;
 }
 
 .form-container {
@@ -25,3 +28,13 @@ h1 {
   flex-direction: column;
 }
 
+h2 {
+  font-family: 'JosefinSans';
+  font-size: 24px;
+  text-align: center;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 15px;
+}
