@@ -72,8 +72,24 @@ header {
 }
 
 .quizz {
+    display: flex;
+    flex-direction: column;
     height: 380px;
-    background-color: aqua;
+    background-color: var(--background-color);
+}
+
+.quizz p {
+    color: var(--text-color);
+}
+
+.quizz label {
+    color: var(--text-color);
+}
+
+.button {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 10px;
 }
 
 footer {
