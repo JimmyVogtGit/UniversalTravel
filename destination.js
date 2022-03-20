@@ -1,4 +1,5 @@
 const target = document.querySelector(".photo-text");
+const valueQuestion1 = document.getElementsByName("question1");
 
 const textPicture = [
 
