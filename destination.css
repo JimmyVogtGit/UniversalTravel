@@ -26,6 +26,13 @@ header {
     width: auto;
 }
 
+.logo {
+    background-image: url(Images/1979.png);
+    height: 100px;
+    width: 200px;
+    background-repeat: no-repeat;
+}
+
 .photo-present {
     height: 580px;
     width: auto;
