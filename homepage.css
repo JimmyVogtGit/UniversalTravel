@@ -1,72 +1,241 @@
-:root{
-    --text-color: rgb(219,169,136);
-    --background-color: rgb(22,44,58);
-    --additional-color: rgba(217,124,80,0.1);
-    
+:root {
+  --text-color: rgb(219, 169, 136);
+  --background-color: rgb(22, 44, 58);
+  --additional-color: rgba(217, 124, 80, 0.1);
 }
 
-*{
-   margin:0;
-   padding: 0; 
-   box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'YesevaOne';
-    src: url('/Polices/YesevaOne.ttf') format('truetype');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'JosefinSans';
-    src: url('/Polices/JosefinSans.ttf') format('truetype');
+  font-family: "YesevaOne";
+  src: url("/Polices/YesevaOne.ttf") format("truetype");
 }
 
-h1{
-    font-family: 'YesevaOne', 'Times New Roman', Times, serif;
-    font-size: 28px;
+@font-face {
+  font-family: "JosefinSans";
+  src: url("/Polices/JosefinSans.ttf") format("truetype");
 }
 
-main{
-    background-color:var(--additional-color);
-    font-family: 'JosefinSans', Georgia, 'Times New Roman', Times, serif ;
+h1 {
+  font-family: "YesevaOne", "Times New Roman", Times, serif;
+  font-size: 28px;
 }
 
+main {
+  background-color: var(--additional-color);
+  font-family: "JosefinSans", Georgia, "Times New Roman", Times, serif;
+}
 
 /* Hero */
-.hero{
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Images/lotr-hobbiton.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.searchbar {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 75%;
+  height: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero p {
+  border-right: solid var(--text-color);
+}
+
+.hero img {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+/* Discover-cards */
+
+.discover-button {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 190px;
+  height: 33px;
+  border: solid 1px var(--text-color);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-discover1 {
+  background-image: url(Images/lotr-argonath.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 214px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.card-discover2 {
+  background-image: url(Images/naboo.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 214px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.card-discover3 {
+  background-image: url(Images/hp_Glenfinnan-train.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 214px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Presentation */
+.presentation {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 100%;
+  height: 620px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.presentation h1 {
+  padding: 2rem;
+}
+
+.presentation h2 {
+  font-size: 24px;
+}
+
+.quote {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.presentation img {
+  padding: 2.5rem;
+}
+
+/* Pourquoi nous choisir ? */
+
+h1:last-of-type {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-left {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding: 0.75rem;
+}
+
+.card-img-left p {
+  width: 60%;
+  height: 100px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.card-img-right {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.75rem;
+}
+
+.card-img-right p {
+  width: 60%;
+  height: 100px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 00.5rem;
+}
+
+.card-img-left img {
+  border-radius: 50%;
+  width: 20%;
+  height: 100px;
+}
+
+.card-img-right img {
+  border-radius: 50%;
+  width: 20%;
+  height: 100px;
+}
+
+hr{
+  border: 1px var(--text-color) solid;
+  width: 35%;
+
+}
+@media screen and (min-width: 601px) {
+
+    /* Hero */
+  .hero {
     width: 100%;
     height: 100vh;
-    background-image: url(Images/lotr-hobbiton.jpg);
+    background-image: url(Images/hobbiton.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding-bottom: 2rem;
-}
+  }
 
-.searchbar{
+  .searchbar {
     background-color: var(--background-color);
     color: var(--text-color);
-    width: 75%;
+    width: 33%;
     height: 3rem;
     border-radius: 20px;
     text-align: center;
     display: flex;
     align-items: center;
-}
-
-.hero p{
-    border-right: solid var(--text-color);
-}
-
-.hero img{
-    padding-left: 0.5rem;
-    padding-right: 1rem;
-}
+    justify-content: center;
+  }
 
 /* Discover-cards */
 
-.discover-button{
+.discover-button {
     background-color: var(--background-color);
     color: var(--text-color);
     width: 190px;
@@ -75,10 +244,10 @@ main{
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;       
-}           
-
-.card-discover1{
+    justify-content: center;
+  }
+  
+  .card-discover1 {
     background-image: url(Images/lotr-argonath.jpg);
     background-size: cover;
     width: 100%;
@@ -86,10 +255,11 @@ main{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 1rem;    
-}
-
-.card-discover2{
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card-discover2 {
     background-image: url(Images/naboo.jpg);
     background-size: cover;
     width: 100%;
@@ -97,10 +267,11 @@ main{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 1rem;    
-}
-
-.card-discover3{
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card-discover3 {
     background-image: url(Images/hp_Glenfinnan-train.jpg);
     background-size: cover;
     width: 100%;
@@ -108,86 +279,11 @@ main{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 1rem;    
-}
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
 
-/* Presentation */
-.presentation{
-    background-color: var(--background-color);
-    color: var(--text-color);
-    width: 100%;
-    height: 620px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-}
-.presentation h1{
-    padding: 2rem;
-}
 
-.presentation h2{
-    font-size: 24px;
-    
-}
-
-.quote{
-    font-weight: bold;
-    font-style: italic;
-}
-
-.presentation img{
-    padding: 2.5rem;
-}
-
-/* Pourquoi nous choisir ? */
-.card-img-left{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    padding: 0.75rem;
-}
-
-.card-img-left p{
-    width: 60%;
-    height: 100px;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    border-radius: 15px;
-    padding: 0.5rem;
-}
-
-.card-img-right{
-    display: flex;
-    justify-content: space-around;
-    padding: 0.75rem;
-}
-
-.card-img-right p{
-    width: 60%;
-    height: 100px;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    padding: 00.5rem;
-    
-}
-
-.card-img-left img{
-    border-radius: 50%;
-    width: 20%;
-    height: 100px;
-}
-
-.card-img-right img{
-    border-radius: 50%;
-    width: 20%;
-    height: 100px;
 }
