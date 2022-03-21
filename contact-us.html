@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <header>
     <img src="Images/" alt="Logo" class="logo" />
@@ -30,26 +32,24 @@
         Le spécialiste de votre projet de voyage vous contactera dans les meilleurs delais
       </h2>
     </section>
-    <section>
-      <form id="contactForm">
-        <div class="form-container">
-          <label for="firstname">Votre prénom :</label>
-          <input type="text" name="firstname" />
-          <label for="lastname">Votre nom :</label>
-          <input type="text" name="lastname" />
-          <label for="number">Votre numéro de téléphone :</label>
-          <input type="text" name="lastname" />
-          <label for="email">Votre email:</label>
-          <input type="email" name="email" />
-          <label for="project">Votre projet :</label>
-          <textarea name="message"></textarea>
-          <br /><br />
-          <div class="button">
-            <input type="submit" value="Envoyez" id="button-submit"/>
-          </div>
+    <form id="contactForm">
+      <div class="form-container">
+        <label for="firstname">Votre prénom :</label>
+        <input type="text" id="firstname" />
+        <label for="lastname">Votre nom :</label>
+        <input type="text" id="lastname" />
+        <label for="number">Votre numéro de téléphone :</label>
+        <input type="text" id="number" />
+        <label for="email">Votre email:</label>
+        <input type="email" id="email" />
+        <label for="project">Votre projet :</label>
+        <textarea id="project"></textarea>
+        <br /><br />
+        <div class="button">
+          <input type="submit" value="Envoyez" id="button-submit" />
         </div>
-      </form>
-    </section>
+      </div>
+    </form>
   </main>
 
   <footer>
@@ -64,4 +64,5 @@
     </div>
   </footer>
 </body>
+
 </html>
