@@ -56,7 +56,42 @@ for (let el in textPicture) {
 const answer1 = document.querySelector("#answer1");
 const answer2 = document.querySelector("#answer2");
 const answer3 = document.querySelector("#answer3");
+let point = 0;
 
 answer1.onsubmit = function(event) {
+    event.preventDefault();
+    const target = document.querySelector(".answer1");
+    let valeur = document.querySelector('input[name=question1]:checked').value;
+    console.log(`${valeur}`);
 
+    if (valeur != "RonaldWisley") {
+        target.style.backgroundColor = "red";
+    } else {
+        target.style.backgroundColor = "green"
+    }
+
+}
+
+answer2.onsubmit = function(event) {
+    event.preventDefault();
+    const target = document.querySelector(".answer2");
+    let valeur = document.querySelector('input[name=question2]:checked').value;
+    console.log(`${valeur}`)
+    if (valeur != "LePoudlardExpress") {
+        target.style.backgroundColor = "red";
+    } else {
+        target.style.backgroundColor = "green"
+    }
+}
+
+answer3.onsubmit = function(event) {
+    event.preventDefault();
+    const target = document.querySelector(".answer3");
+    let valeur = document.querySelector('input[name=question3]:checked').value;
+    console.log(`${valeur}`)
+    if (valeur != "Voldemort") {
+        target.style.backgroundColor = "red";
+    } else {
+        target.style.backgroundColor = "green"
+    }
 }
