@@ -235,6 +235,12 @@ hr{
 
 /* Discover-cards */
 
+.discover{
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+}
+
 .discover-button {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -249,9 +255,9 @@ hr{
   
   .card-discover1 {
     background-image: url(Images/lotr-argonath.jpg);
-    background-size: cover;
+    background-size: contain;
     width: 100%;
-    height: 214px;
+    height: 80%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -263,7 +269,7 @@ hr{
     background-image: url(Images/naboo.jpg);
     background-size: cover;
     width: 100%;
-    height: 214px;
+    height: 80%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -275,7 +281,7 @@ hr{
     background-image: url(Images/hp_Glenfinnan-train.jpg);
     background-size: cover;
     width: 100%;
-    height: 214px;
+    height: 80%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
