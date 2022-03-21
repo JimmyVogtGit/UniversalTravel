@@ -65,7 +65,8 @@ header {
   gap: 2rem;
 }
 
-a {
+li a,
+div a {
   font-family: 'JosefinSans';
   text-decoration: none;
   color: var(--primary-color);
@@ -85,8 +86,8 @@ a {
 }
 
 .social-icons {
-    display: flex;
-    gap: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 @media screen and (min-width: 601px) {
