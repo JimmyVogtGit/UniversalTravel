@@ -52,3 +52,11 @@ function callTextPicture(title, picture) {
 for (let el in textPicture) {
     callTextPicture(textPicture[el].name, textPicture[el].picture);
 }
+
+const answer1 = document.querySelector("#answer1");
+const answer2 = document.querySelector("#answer2");
+const answer3 = document.querySelector("#answer3");
+
+answer1.onsubmit = function(event) {
+
+}
