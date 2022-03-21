@@ -65,7 +65,8 @@ header {
   gap: 2rem;
 }
 
-a {
+li a,
+div a {
   font-family: 'JosefinSans';
   text-decoration: none;
   color: var(--primary-color);
