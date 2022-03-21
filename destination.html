@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=U, initial-scale=1.0">
     <link rel="stylesheet" href="destination.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="destination.js" defer></script>
     <title>Universal Travel - Destinations</title>
 </head>
 
 <body>
     <header>
+        <div class="logo">
+
+        </div>
 
     </header>
 
@@ -19,9 +24,9 @@
 
     </div>
 
-    <div class="present-voyage">
+    <div>
         <div class="present-text">
-            <p>presentation voyage here !</p>
+            <p data-aos="fade-up" data-aos-anchor-placement="center-center">presentation voyage here !</p>
         </div>
 
     </div>
@@ -30,26 +35,68 @@
 
     </div>
 
-    <div class="quizz">
-        <p>Quizz here !</p>
+    <form>
+        <div class="quizz">
+            <p data-aos="fade-up" data-aos-anchor-placement="center-center">Quizz here !</p>
 
-        <div class="answer1">
+            <div class="answer">
+                <p>Comment s'appelle le meilleur ami d'Harry potter</p>
+                <input type="radio" id="Ronald Wisley" name="question1" value="Ronald Wisley">
+                <label for="Ronald Wisley">Ronald Wisley</label>
+                <input type="radio" id="Sirius Black" name="question1" value="Sirius Black">
+                <label for="Sirius Black">Sirius Black</label>
+                <input type="radio" id="Neuville Londubat" name="question1" value="Neuville Londubat">
+                <label for="Neuville Londubat">Neuville Londubat</label>
 
+                <div>
+                    <input class="button" type="submit" value="Valider réponse">
+                </div>
+            </div>
+
+
+            <div class="answer">
+                <p>Quel train prend Harry pour aller à Poudlard ?</p>
+                <input type="radio" id="RER" name="question2" value="RER">
+                <label for="RER">RER</label>
+                <input type="radio" id="Le métro Tisséo" name="question2" value="Le métro Tisséo">
+                <label for="Le métro Tisséo">Le métro Tisséo</label>
+                <input type="radio" id="Le Poudlard Express" name="question2" value="Le Poudlard Express">
+                <label for="Le Poudlard Express">Le Poudlard Express</label>
+
+                <div>
+                    <input class="button" type="submit" value="Valider réponse">
+                </div>
+
+            </div>
+
+
+
+            <div class="answer">
+                <p>Quel est le plus grand ennemi d'Harry Potter ?</p>
+                <input type="radio" id="Albus Dumbledore" name="question3" value="Albus Dumbledore">
+                <label for="Albus Dumbledore">Albus Dumbledore</label>
+                <input type="radio" id="Voldemort" name="question3" value="Voldemort">
+                <label for="Voldemort">Voldemort</label>
+                <input type="radio" id="Aragog" name="question3" value="Aragog">
+                <label for="Aragog">Aragog</label>
+
+
+                <div>
+                    <input class="button" type="submit" value="Valider réponse">
+                </div>
+
+            </div>
         </div>
 
-        <div class="answer1">
+    </form>
 
-        </div>
-
-        <div class="answer1">
-
-        </div>
-    </div>
 
     <footer>
 
     </footer>
-
+    <script>
+        AOS.init();
+    </script>
 
 
 </body>

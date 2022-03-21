@@ -1,8 +1,9 @@
 :root {
   --primary-color: #DBA988;
   --secondary-color: #162C3A;
-  --light: rgba(201, 125, 80, 0.1);
+  --secondary-light: rgba(22, 44, 58, 0.8);
   --ternary-color: #DBA988;
+  --ternary-light: rgba(201, 125, 80, 0.1);
 }
 
 @font-face {
@@ -15,13 +16,63 @@
   src: url('/Polices/JosefinSans.ttf') format('truetype');
 }
 
-h1 {
-  font-family: 'YesevaOne', cursive;
+main {
+  line-height: 2rem;
+  max-width: 85ch;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'JosefinSans';
+  font-size: 24px;
+  text-align: center;
   color: var(--primary-color);
+  background-color: var(--secondary-color);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 15px;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  margin-top: calc(60px + 2rem);
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  gap: 0.5rem
 }
 
+.form-container label {
+  font-family: 'JosefinSans';
+  color: var(--secondary-color);
+}
+
+.form-container input, 
+.form-container textarea {
+  font-family: 'JosefinSans';
+  font-size: 20px;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.form-container textarea {
+  height: 5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+#button-submit {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: solid 1px var(--primary-color);
+  border-radius: 20px;
+  width: 190px;
+  cursor: pointer;
+}

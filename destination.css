@@ -5,20 +5,6 @@
     --ternary-light: rgba(201, 125, 80, 0.1);
 }
 
-
-/* KeyFrames animation */
-
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
 @font-face {
     font-family: 'YesevaOne';
     src: url('/Polices/YesevaOne.ttf') format('truetype');
@@ -40,10 +26,17 @@ header {
     width: auto;
 }
 
+.logo {
+    background-image: url(Images/logo40x40.png);
+    height: 100px;
+    width: 200px;
+    background-repeat: no-repeat;
+}
+
 .photo-present {
     height: 580px;
     width: auto;
-    background-image: url(Images/harryPotterCuidich.jpg);
+    background-image: url(Images/harryPotterQuidditch.jpg);
     background-size: cover;
     margin-bottom: 1rem;
 }
@@ -64,8 +57,7 @@ header {
     height: 360px;
     width: auto;
     background-size: cover;
-    margin-bottom: 5rem;
-    border-radius: 50%;
+    margin-bottom: 2rem;
 }
 
 .photo-text h2 {
@@ -87,8 +79,24 @@ header {
 }
 
 .quizz {
+    display: flex;
+    flex-direction: column;
     height: 380px;
-    background-color: aqua;
+    background-color: var(--background-color);
+}
+
+.quizz p {
+    color: var(--text-color);
+}
+
+.quizz label {
+    color: var(--text-color);
+}
+
+.button {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 10px;
 }
 
 footer {

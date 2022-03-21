@@ -1,5 +1,6 @@
 const target = document.querySelector(".photo-text");
 
+
 const textPicture = [
 
     {

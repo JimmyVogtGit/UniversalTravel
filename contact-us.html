@@ -6,28 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universal Travel - Contactez-nous</title>
   <link href="style-contact-us.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <section>
-    <h1>Contactez-nous</h1>
-  </section>
-  <section>
-    <form id="contactForm">
-      <div class="form-container">
-        <label for="firstname">Votre prénom :</label>
-        <input type="text" name="firstname" />
-        <label for="lastname">Votre nom :</label>
-        <input type="text" name="lastname" />
-        <label for="number">Votre numéro de téléphone :</label>
-        <input type="text" name="lastname" />
-        <label for="email">Votre email:</label>
-        <input type="email" name="email" />
-        <label for="project">Votre projet :</label>
-        <textarea name="message"></textarea>
-        <br /><br />
-        <input type="submit" value="Envoyez" />
+  <header>
+    <img src="Images/" alt="Logo" class="logo" />
+    <ul class="menu">
+      <li><a class="menuItem" href="index.html">Page d'accueil</a></li>
+      <li><a class="menuItem" href="destination.html">Nos destinations</a></li>
+      <li><a class="menuItem" href="aboutUs.html">A propos</a></li>
+      <li><a class="menuItem" href="contact-us.html">Contactez-nous</a></li>
+    </ul>
+    <div class="hamburger">
+      <img src="Images/menu-burger.png" alt="Burger Menu" class="menuIcon" />
+      <img src="Images/menu-close.png" alt="Close Icon" class="closeIcon" />
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>
+        Le spécialiste de votre projet de voyage vous contactera dans les meilleurs delais
+      </h2>
+    </section>
+    <section>
+      <form id="contactForm">
+        <div class="form-container">
+          <label for="firstname">Votre prénom :</label>
+          <input type="text" name="firstname" />
+          <label for="lastname">Votre nom :</label>
+          <input type="text" name="lastname" />
+          <label for="number">Votre numéro de téléphone :</label>
+          <input type="text" name="lastname" />
+          <label for="email">Votre email:</label>
+          <input type="email" name="email" />
+          <label for="project">Votre projet :</label>
+          <textarea name="message"></textarea>
+          <br /><br />
+          <div class="button">
+            <input type="submit" value="Envoyez" id="button-submit"/>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <a href="contact-us.html">Contact</a>
+      <a href="#">Mentions <br> légales</a>
+      <div class="social-icons">
+        <a href="www.facebbok.com"><img src="Images/social-fb.png" alt="Logo facebook"></a>
+        <a href="www.twitter.com"><img src="Images/social-twitter.png" alt="Logo twitter"></a>
+        <a href="www.instagram.com"><img src="Images/social-instagram.png" alt="Logo instagram"></a>
       </div>
-    </form>
-  </section>
+    </div>
+  </footer>
 </body>
 </html>
