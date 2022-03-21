@@ -1,0 +1,24 @@
+{
+  "name": "universaltravel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "destination.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "w3c": "w3c.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimmyVogtGit/UniversalTravel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JimmyVogtGit/UniversalTravel/issues"
+  },
+  "homepage": "https://github.com/JimmyVogtGit/UniversalTravel#readme",
+  "dependencies": {
+    "w3c-html-validator": "^1.0.3"
+  }
+}
