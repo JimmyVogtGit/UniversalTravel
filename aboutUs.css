@@ -20,6 +20,12 @@ body {
 }
 
 h1 {
+  color: var(--third-color);
+  text-align: center;
+}
+
+.introducing {
+  color: var(--third-color);
   text-align: center;
 }
 
