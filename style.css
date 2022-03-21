@@ -97,7 +97,7 @@ a {
   .menu {
     flex-direction: row;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 2.5rem;
     transform: none;
     left: 0;
     bottom: 0;
