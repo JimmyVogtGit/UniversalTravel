@@ -77,15 +77,22 @@ header {
     animation-name: slidein;
 }
 
+form {
+    margin-top: 20px;
+}
+
 .quizz {
     display: flex;
     flex-direction: column;
-    height: 380px;
     background-color: var(--background-color);
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .quizz p {
     color: var(--text-color);
+    text-align: center;
+    margin: 0;
 }
 
 .quizz label {
@@ -98,7 +105,13 @@ header {
     border-radius: 10px;
 }
 
+.quizz-reply {
+    height: 30px;
+    width: auto;
+    background-color: var(--background-color);
+}
+
 footer {
-    height: 56px;
+    height: 100px;
     background-color: brown;
 }
