@@ -1,7 +1,6 @@
 {
   "name": "universaltravel",
   "version": "1.0.0",
-  "description": "",
   "main": "destination.js",
   "type": "module",
   "scripts": {
@@ -20,5 +19,6 @@
   "homepage": "https://github.com/JimmyVogtGit/UniversalTravel#readme",
   "dependencies": {
     "w3c-html-validator": "^1.0.3"
-  }
+  },
+  "description": ""
 }

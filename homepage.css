@@ -144,13 +144,11 @@ main {
 
 /* Pourquoi nous choisir ? */
 
-h1:last-of-type {
+.choose-us h2{
+  text-align: center;
   padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
+}
 .card-img-left {
   display: flex;
   flex-direction: row-reverse;
@@ -202,14 +200,8 @@ h1:last-of-type {
   height: 100px;
 }
 
-hr{
-  border: 1px var(--text-color) solid;
-  width: 35%;
-
-}
 @media screen and (min-width: 601px) {
-
-    /* Hero */
+  /* Hero */
   .hero {
     width: 100%;
     height: 100vh;
@@ -233,15 +225,16 @@ hr{
     justify-content: center;
   }
 
-/* Discover-cards */
+  /* Discover-cards */
 
-.discover{
-  display: flex;
-  height: 100vh;
-  justify-content: space-around;
-}
+  .discover {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-.discover-button {
+  .discover-button {
     background-color: var(--background-color);
     color: var(--text-color);
     width: 190px;
@@ -252,44 +245,148 @@ hr{
     align-items: center;
     justify-content: center;
   }
-  
+
   .card-discover1 {
-    background-image: url(Images/lotr-argonath.jpg);
-    background-size: contain;
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .card-discover2 {
-    background-image: url(Images/naboo.jpg);
+    background-image: url(Images/montsaintmichel.jpg);
+    background-position: center;
     background-size: cover;
-    width: 100%;
+    width: 30%;
     height: 80%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding: 1rem;
     margin-top: 1rem;
+    border-radius: 15px;
   }
-  
+
+  .card-discover2 {
+    background-image: url(Images/villanaboo.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 15px;
+  }
+
   .card-discover3 {
     background-image: url(Images/hp_Glenfinnan-train.jpg);
     background-size: cover;
-    width: 100%;
+    background-position: center;
+    width: 30%;
     height: 80%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding: 1rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    border-radius: 15px;
   }
-  
+
+  /* Presentation */
+.presentation {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 80%;
+  height: 620px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.presentation h1 {
+  padding: 2rem;
+}
+
+.presentation h2 {
+  font-size: 24px;
+}
+
+.quote {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.presentation img {
+  padding: 2.5rem;
+}
+
+/* Pourquoi nous choisir ? */
+
+.choose-us{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.choose-us h2{
+  text-align: center;
+  padding: 2rem;
+  color: var(--background-color);
+  font-size: 40px;
+
+}
+.card-img-left {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 80%;
+}
+
+.card-img-right {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 80%;
+}
+
+.card-img-left p {
+  width: 60%;
+  height: 150px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
 
 
+
+.card-img-right p {
+  width: 60%;
+  height: 150px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 00.5rem;
+}
+
+.card-img-left img {
+  border-radius: 50%;
+  width: 20%;
+  height: 150px;
+}
+
+.card-img-right img {
+  border-radius: 50%;
+  width: 20%;
+  height: 150px;
+}
 }
