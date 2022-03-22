@@ -3,45 +3,27 @@
   --background-color: rgb(22, 44, 58);
   --additional-color: rgba(217, 124, 80, 0.1);
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: "YesevaOne";
   src: url("/Polices/YesevaOne.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "JosefinSans";
   src: url("/Polices/JosefinSans.ttf") format("truetype");
 }
-
 h1 {
   font-family: "YesevaOne", "Times New Roman", Times, serif;
   font-size: 28px;
 }
-
 main {
   background-color: var(--additional-color);
   font-family: "JosefinSans", Georgia, "Times New Roman", Times, serif;
 }
-
-/* Hero */
-.hero {
-  width: 100%;
-  height: 100vh;
-  background-image: url(Images/lotr-hobbiton.jpg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  padding-bottom: 2rem;
-}
-
 .searchbar {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -81,7 +63,6 @@ main {
 }
 
 /* Discover-cards */
-
 .discover-button {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -93,7 +74,6 @@ main {
   align-items: center;
   justify-content: center;
 }
-
 .card-discover1 {
   background-image: url(Images/lotr-argonath.jpg);
   background-size: cover;
@@ -105,7 +85,6 @@ main {
   padding: 1rem;
   margin-top: 1rem;
 }
-
 .card-discover2 {
   background-image: url(Images/naboo.jpg);
   background-size: cover;
@@ -117,7 +96,6 @@ main {
   padding: 1rem;
   margin-top: 1rem;
 }
-
 .card-discover3 {
   background-image: url(Images/hp_Glenfinnan-train.jpg);
   background-size: cover;
@@ -130,7 +108,6 @@ main {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
 /* Presentation */
 .presentation {
   background-color: var(--background-color);
@@ -145,26 +122,20 @@ main {
 .presentation h1 {
   padding: 2rem;
 }
-
 .presentation h2 {
   font-size: 24px;
 }
-
 .quote {
   font-weight: bold;
   font-style: italic;
 }
-
 .presentation img {
   padding: 2.5rem;
 }
-
 /* Pourquoi nous choisir ? */
-
 .choose-us h2{
   text-align: center;
   padding: 1rem;
-
 }
 .card-img-left {
   display: flex;
@@ -172,7 +143,6 @@ main {
   justify-content: space-around;
   padding: 0.75rem;
 }
-
 .card-img-left p {
   width: 60%;
   height: 100px;
@@ -185,13 +155,11 @@ main {
   border-radius: 15px;
   padding: 0.5rem;
 }
-
 .card-img-right {
   display: flex;
   justify-content: space-around;
   padding: 0.75rem;
 }
-
 .card-img-right p {
   width: 60%;
   height: 100px;
@@ -204,19 +172,16 @@ main {
   border-radius: 15px;
   padding: 00.5rem;
 }
-
 .card-img-left img {
   border-radius: 50%;
   width: 20%;
   height: 100px;
 }
-
 .card-img-right img {
   border-radius: 50%;
   width: 20%;
   height: 100px;
 }
-
 @media screen and (min-width: 601px) {
   /* Hero */
   .hero {
@@ -229,7 +194,6 @@ main {
     align-items: center;
     padding-bottom: 2rem;
   }
-
   .searchbar {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -241,16 +205,13 @@ main {
     align-items: center;
     justify-content: center;
   }
-
   /* Discover-cards */
-
   .discover {
     display: flex;
     height: 100vh;
     justify-content: space-around;
     align-items: center;
   }
-
   .discover-button {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -262,7 +223,6 @@ main {
     align-items: center;
     justify-content: center;
   }
-
   .card-discover1 {
     background-image: url(Images/montsaintmichel.jpg);
     background-position: center;
@@ -276,7 +236,6 @@ main {
     margin-top: 1rem;
     border-radius: 15px;
   }
-
   .card-discover2 {
     background-image: url(Images/villanaboo.jpg);
     background-size: cover;
@@ -289,7 +248,6 @@ main {
     margin-top: 1rem;
     border-radius: 15px;
   }
-
   .card-discover3 {
     background-image: url(Images/hp_Glenfinnan-train.jpg);
     background-size: cover;
@@ -304,7 +262,6 @@ main {
     margin-bottom: 0;
     border-radius: 15px;
   }
-
   /* Presentation */
 .presentation {
   background-color: var(--background-color);
@@ -321,22 +278,17 @@ main {
 .presentation h1 {
   padding: 2rem;
 }
-
 .presentation h2 {
   font-size: 24px;
 }
-
 .quote {
   font-weight: bold;
   font-style: italic;
 }
-
 .presentation img {
   padding: 2.5rem;
 }
-
 /* Pourquoi nous choisir ? */
-
 .choose-us{
   display: flex;
   flex-direction: column;
@@ -344,13 +296,11 @@ main {
   align-items: center;
   padding-bottom: 3rem;
 }
-
 .choose-us h2{
   text-align: center;
   padding: 2rem;
   color: var(--background-color);
   font-size: 40px;
-
 }
 .card-img-left {
   display: flex;
@@ -359,14 +309,12 @@ main {
   padding: 1rem;
   width: 80%;
 }
-
 .card-img-right {
   display: flex;
   justify-content: space-around;
   padding: 1rem;
   width: 80%;
 }
-
 .card-img-left p {
   width: 60%;
   height: 150px;
@@ -379,9 +327,6 @@ main {
   border-radius: 15px;
   padding: 0.5rem;
 }
-
-
-
 .card-img-right p {
   width: 60%;
   height: 150px;
@@ -394,13 +339,11 @@ main {
   border-radius: 15px;
   padding: 00.5rem;
 }
-
 .card-img-left img {
   border-radius: 50%;
   width: 20%;
   height: 150px;
 }
-
 .card-img-right img {
   border-radius: 50%;
   width: 20%;
