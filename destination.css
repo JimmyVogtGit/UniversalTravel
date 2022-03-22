@@ -21,17 +21,6 @@ body {
     background-color: var(--ternary-light);
 }
 
-header {
-    height: 60px;
-    width: auto;
-}
-
-.logo {
-    height: 100px;
-    width: 200px;
-    background-repeat: no-repeat;
-}
-
 .photo-present {
     height: 580px;
     width: auto;
@@ -83,13 +72,15 @@ form {
 
 .quizz {
     display: flex;
+    align-items: stretch;
     flex-direction: column;
     background-color: var(--background-color);
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
-.quizz p {
+.quizz h2,
+h3 {
     color: var(--text-color);
     text-align: center;
     margin: 0;
@@ -100,7 +91,8 @@ form {
 }
 
 .button {
-    background-color: var(--text-color);
+    display: flex;
+    justify-content: center;
     color: var(--background-color);
     border-radius: 10px;
 }
@@ -109,9 +101,4 @@ form {
     height: 30px;
     width: auto;
     background-color: var(--background-color);
-}
-
-footer {
-    height: 100px;
-    background-color: brown;
 }
