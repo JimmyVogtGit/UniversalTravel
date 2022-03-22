@@ -58,10 +58,10 @@ for (let el in textPicture) {
 const answer1 = document.querySelector("#answer1");
 const answer2 = document.querySelector("#answer2");
 const answer3 = document.querySelector("#answer3");
-let point = 0;
 
 
-let reply = 0;
+
+
 answer1.onsubmit = function(event) {
     event.preventDefault();
     const target = document.querySelector(".answer1");
@@ -71,22 +71,29 @@ answer1.onsubmit = function(event) {
     if (valeur != "RonaldWisley") {
         target.style.backgroundColor = "red";
 
+
     } else {
         target.style.backgroundColor = "green"
     }
+    document.querySelector(".hidden-button1").style.display = "none";
 
 }
 
 answer2.onsubmit = function(event) {
     event.preventDefault();
     const target = document.querySelector(".answer2");
+
     let valeur = document.querySelector('input[name=question2]:checked').value;
     console.log(`${valeur}`)
     if (valeur != "LePoudlardExpress") {
         target.style.backgroundColor = "red";
+
     } else {
-        target.style.backgroundColor = "green"
+        target.style.backgroundColor = "green";
+
     }
+    document.querySelector(".hidden-button2").style.display = "none";
+
 }
 
 answer3.onsubmit = function(event) {
@@ -99,4 +106,5 @@ answer3.onsubmit = function(event) {
     } else {
         target.style.backgroundColor = "green"
     }
+    document.querySelector(".hidden-button3").style.display = "none";
 }
