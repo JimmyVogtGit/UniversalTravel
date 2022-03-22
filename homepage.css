@@ -51,16 +51,33 @@ main {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.hero p {
-  border-right: solid var(--text-color);
+#searchbar {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 90%;
+  width: 80%;
+  padding-left: 1rem;
+  border-radius: 15px;
+  border: var(--background-color);
 }
+
+.trait{
+  border-right: 1px solid var(--text-color);
+  height: 100%;
+}
+
 
 .hero img {
   padding-left: 0.5rem;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
+}
+
+#loupe {
+  background-color: var(--background-color);
+  border: var(--background-color);
+  border-radius: 15px;
 }
 
 /* Discover-cards */
