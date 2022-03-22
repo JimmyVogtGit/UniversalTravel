@@ -24,6 +24,8 @@ const textPicture = [
     }
 
 
+
+
 ];
 
 function callTextPicture(title, picture) {
@@ -58,6 +60,8 @@ const answer2 = document.querySelector("#answer2");
 const answer3 = document.querySelector("#answer3");
 let point = 0;
 
+
+let reply = 0;
 answer1.onsubmit = function(event) {
     event.preventDefault();
     const target = document.querySelector(".answer1");
@@ -66,6 +70,7 @@ answer1.onsubmit = function(event) {
 
     if (valeur != "RonaldWisley") {
         target.style.backgroundColor = "red";
+
     } else {
         target.style.backgroundColor = "green"
     }
