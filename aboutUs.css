@@ -14,18 +14,23 @@
   src: url('/Polices/JosefinSans.ttf') format('truetype');
 }
 
+header {
+  height: 60px;
+  width: auto;
+}
+
 body {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
 h1 {
-  color: var(--third-color);
+  color: var(--primary-color);
   text-align: center;
 }
 
 .introducing {
-  color: var(--third-color);
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -33,7 +38,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10rem;
+  margin: 5rem;
   justify-content: space-between;
 }
 
@@ -41,26 +46,46 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
+}
+
+.fakeBanner {
+  position: relative;
 }
 
 .h2Team {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 20px;
+  position: relative;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 150px;
+  width: auto;
   color: var(--primary-color);
   background-color: var(--third-color);
   text-align: center;
+  font-size: 1.5rem;
+  border: 2px solid var(--primary-color);
 }
 
 img {
+  position: absolute;
+  top: -75px;
   border-radius: 50%;
-  max-width: 50%;
+  max-width: 60%;
   height: auto;
-}
-
-h2 {
-  text-align: center;
+  border: 2px solid var(--text-color);
 }
 
 .storyTeam {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   color: var(--text-color);
+  height: 300px;
   background-color: var(--primary-color);
+  padding: 15px;
+  text-align: justify;
 }
