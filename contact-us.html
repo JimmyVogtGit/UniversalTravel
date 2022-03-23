@@ -9,21 +9,31 @@
   <link href="style-contact-us.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js" defer></script>
+  <script src="script-contact-us.js" defer></script>
 </head>
 
 <body>
-  <header>
+  <header class="navbar">
     <img src="Images/Logo-60x60.png" alt="Logo" class="logo" />
+    <label for="input-hamburger" class="hamburger "></label>
+    <input type="checkbox" id="input-hamburger" hidden>
     <ul class="menu">
-      <li><a class="menuItem" href="index.html">Page d'accueil</a></li>
-      <li><a class="menuItem" href="destination.html">Nos destinations</a></li>
-      <li><a class="menuItem" href="aboutUs.html">A propos</a></li>
-      <li><a class="menuItem" href="contact-us.html">Contactez-nous</a></li>
+      <li><a href="index.html" class="menu-link">Page d'accueil</a></li>
+      
+      <li class="has-dropdown">
+        <a href="#" class="menu-link">Nos destinations
+          <span class="arrow"></span>
+        </a>
+        <ul class="submenu">
+          <li><a href="#" class="menu-link">Le Seigneur des Anneaux</a></li>
+          <li><a href="#" class="menu-link">Star Wars</a></li>
+          <li><a href="destination.html" class="menu-link">Harry Potter</a></li>
+        </ul>
+      </li>
+
+      <li><a href="aboutUs.html" class="menu-link">A propos</a></li>
+      <li><a href="contact-us.html" class="menu-link">Nous contacter</a></li>
     </ul>
-    <div class="hamburger">
-      <img src="Images/menu-burger.png" alt="Burger Menu" class="menuIcon" />
-      <img src="Images/menu-close.png" alt="Close Icon" class="closeIcon" />
-    </div>
   </header>
 
   <main>
