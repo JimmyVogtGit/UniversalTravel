@@ -61,7 +61,7 @@ function showResult(r) {
 
     if (r === 0) {
         quizzTexte = document.createElement("p");
-        quizzTexte.textContent = `Vous avez ${r} bonne réponse... désolé`;
+        quizzTexte.textContent = `Vous avez ${r} bonne réponse... Partir sur les traces d'Harry vous fera le plus grand bien.`;
         quizzReply.appendChild(quizzTexte);
 
     }
