@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #DBA988;
-  --secondary-color: #162C3A;
+  --primary-color: rgb(219, 169, 136);
+  --secondary-color: rgb(22, 44, 58);
   --secondary-light: rgba(22, 44, 58, 0.8);
-  --ternary-color: rgb(201, 125, 80);
-  --ternary-light: rgba(201, 125, 80, 0.1);
+  --ternary-color: rgb(217, 124, 80);
+  --ternary-light: rgba(217, 124, 80, 0.1);
 }
 
 @font-face {
