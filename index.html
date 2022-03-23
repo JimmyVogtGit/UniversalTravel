@@ -8,7 +8,7 @@
   <link href="homepage.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="homepage.js" defer></script>
-  <script src="script.js" defer></script>
+  <script src="slideshow-script.js" defer></script>
 </head>
 <body>
   <header>
@@ -25,9 +25,12 @@
     </div>
   </header>
     <main>
-      <div class="hero">
+      <div class="hero" style="background-image: url('Images/hobbiton.jpg')">
+        <button id="prev" type="button"><img src="Images/arrow-left.png"></button>
+        <button id="next" type="button"><img src="Images/arrow-right.png"></button>
         <div class="searchbar">
         <input id="searchbar" type="text" placeholder="Trouvez votre destination">
+        
         <div class="trait"></div>
         <button id="loupe" type="button"><img src="Images/loupe.png" alt="search icon"/></button>
         </div>
@@ -103,7 +106,7 @@
           légales</a
         >
         <div class="social-icons">
-          <a href="www.facebook.com"
+          <a href="www.facebbok.com"
             ><img src="Images/social-fb.png" alt="Logo facebook"
           /></a>
           <a href="www.twitter.com"

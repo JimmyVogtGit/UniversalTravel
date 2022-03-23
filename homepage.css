@@ -24,6 +24,49 @@ main {
   background-color: var(--additional-color);
   font-family: "JosefinSans", Georgia, "Times New Roman", Times, serif;
 }
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Images/lotr-hobbiton.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+#prev{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: 2rem;
+  border: solid var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#next{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: 2rem;
+  border: solid var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .searchbar {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -51,7 +94,7 @@ main {
 }
 
 
-.hero img {
+.searchbar img {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -236,6 +279,12 @@ main {
     margin-top: 1rem;
     border-radius: 15px;
   }
+
+  .card-discover1:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
   .card-discover2 {
     background-image: url(Images/villanaboo.jpg);
     background-size: cover;
@@ -248,6 +297,12 @@ main {
     margin-top: 1rem;
     border-radius: 15px;
   }
+
+  .card-discover2:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
   .card-discover3 {
     background-image: url(Images/hp_Glenfinnan-train.jpg);
     background-size: cover;
@@ -262,6 +317,12 @@ main {
     margin-bottom: 0;
     border-radius: 15px;
   }
+
+  .card-discover3:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
   /* Presentation */
 .presentation {
   background-color: var(--background-color);
