@@ -24,6 +24,49 @@ main {
   background-color: var(--additional-color);
   font-family: "JosefinSans", Georgia, "Times New Roman", Times, serif;
 }
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Images/lotr-hobbiton.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+#prev{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  position: absolute;
+  left: 0;
+  top: 70%;
+  margin: 2rem;
+  border: solid var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#next{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  position: absolute;
+  right: 0;
+  top: 70%;
+  margin: 2rem;
+  border: solid var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .searchbar {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -51,7 +94,7 @@ main {
 }
 
 
-.hero img {
+.searchbar img {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -143,6 +186,11 @@ main {
   justify-content: space-around;
   padding: 0.75rem;
 }
+.card-img-right {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.75rem;
+}
 .card-img-left p {
   width: 60%;
   height: 100px;
@@ -155,11 +203,7 @@ main {
   border-radius: 15px;
   padding: 0.5rem;
 }
-.card-img-right {
-  display: flex;
-  justify-content: space-around;
-  padding: 0.75rem;
-}
+
 .card-img-right p {
   width: 60%;
   height: 100px;
@@ -180,29 +224,29 @@ main {
 .card-img-right img {
   border-radius: 50%;
   width: 20%;
-  height: 100px;
+  height: 100%;
 }
 @media screen and (min-width: 601px) {
   /* Hero */
   .hero {
-    width: 100%;
-    height: 100vh;
     background-image: url(Images/hobbiton.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding-bottom: 2rem;
+  }
+  #prev{
+    height: 40px;
+    width: 40px;
+    left: 0;
+    top: 50%;
+  }
+
+  #next{
+    height: 40px;
+    width: 40px;
+    right: 0;
+    top: 50%;
   }
   .searchbar {
-    background-color: var(--background-color);
-    color: var(--text-color);
     width: 33%;
     height: 3rem;
-    border-radius: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
     justify-content: center;
   }
   /* Discover-cards */
@@ -212,82 +256,56 @@ main {
     justify-content: space-around;
     align-items: center;
   }
-  .discover-button {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    width: 190px;
-    height: 33px;
-    border: solid 1px var(--text-color);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   .card-discover1 {
     background-image: url(Images/montsaintmichel.jpg);
     background-position: center;
     background-size: cover;
     width: 30%;
     height: 80%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 1rem;
-    margin-top: 1rem;
     border-radius: 15px;
   }
+
+  .card-discover1:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
   .card-discover2 {
     background-image: url(Images/villanaboo.jpg);
-    background-size: cover;
     width: 30%;
     height: 80%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 1rem;
-    margin-top: 1rem;
     border-radius: 15px;
   }
+
+  .card-discover2:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
   .card-discover3 {
     background-image: url(Images/hp_Glenfinnan-train.jpg);
-    background-size: cover;
     background-position: center;
     width: 30%;
     height: 80%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 1rem;
-    margin-top: 1rem;
     margin-bottom: 0;
     border-radius: 15px;
   }
+
+  .card-discover3:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
   /* Presentation */
 .presentation {
-  background-color: var(--background-color);
-  color: var(--text-color);
   width: 80%;
   height: 620px;
-  display: flex;
   margin: auto;
-  align-items: center;
-  flex-direction: column;
   padding: 1rem;
   border-radius: 15px;
 }
-.presentation h1 {
-  padding: 2rem;
-}
-.presentation h2 {
-  font-size: 24px;
-}
-.quote {
-  font-weight: bold;
-  font-style: italic;
-}
-.presentation img {
-  padding: 2.5rem;
-}
+
 /* Pourquoi nous choisir ? */
 .choose-us{
   display: flex;
@@ -297,56 +315,28 @@ main {
   padding-bottom: 3rem;
 }
 .choose-us h2{
-  text-align: center;
   padding: 2rem;
   color: var(--background-color);
   font-size: 40px;
 }
 .card-img-left {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
   padding: 1rem;
   width: 80%;
 }
 .card-img-right {
-  display: flex;
-  justify-content: space-around;
   padding: 1rem;
   width: 80%;
 }
 .card-img-left p {
-  width: 60%;
   height: 150px;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  border-radius: 15px;
-  padding: 0.5rem;
 }
 .card-img-right p {
-  width: 60%;
   height: 150px;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  padding: 00.5rem;
 }
 .card-img-left img {
-  border-radius: 50%;
-  width: 20%;
   height: 150px;
 }
 .card-img-right img {
-  border-radius: 50%;
-  width: 20%;
   height: 150px;
 }
 }
