@@ -1,118 +1,133 @@
-                                            :root {
-                                               --text-color: rgb(219, 169, 136);
-                                               --background-color: rgb(22, 44, 58);
-                                               --additional-color: rgba(217, 124, 80, 0.1);
-                                               --ternary-light: rgba(201, 125, 80, 0.1);
-                                           }
-                                           
-                                           @font-face {
-                                               font-family: 'YesevaOne';
-                                               src: url('/Polices/YesevaOne.ttf') format('truetype');
-                                           }
-                                           
-                                           @font-face {
-                                               font-family: 'JosefinSans';
-                                               src: url('/Polices/JosefinSans.ttf') format('truetype');
-                                           }
-                                           
-                                           body {
-                                               box-sizing: border-box;
-                                               margin: 0;
-                                               padding: 0;
-                                               background-color: var(--ternary-light);
-                                           }
-                                           
-                                           .photo-present {
-                                               height: 580px;
-                                               max-width: 100%;
-                                               background-image: url("./Images/harryPotterPetit.jpg");
-                                               background-size: cover;
-                                               margin-bottom: 1rem;
-                                           }
-                                           
-                                           .present-voyage {
-                                               height: 580px;
-                                               width: auto;
-                                               display: flex;
-                                               justify-content: center;
-                                           }
-                                           
-                                           .photo-text {
-                                               display: flex;
-                                               flex-direction: column;
-                                           }
-                                           
-                                           .photo-text div {
-                                               height: 360px;
-                                               width: auto;
-                                               background-size: cover;
-                                               margin-bottom: 2rem;
-                                           }
-                                           
-                                           .photo-text h2 {
-                                               margin: 0;
-                                               padding-top: 1.5rem;
-                                               text-align: center;
-                                               font-family: 'JosefinSans';
-                                               color: var(--text-color);
-                                               background-color: var(--background-color);
-                                               height: 3rem;
-                                               border-radius: 5%;
-                                           }
-                                           
-                                           .picture {
-                                               display: flex;
-                                               flex-direction: column-reverse;
-                                               animation-duration: 3s;
-                                               animation-name: slidein;
-                                           }
-                                           
-                                           form {
-                                               margin: 20px;
-                                           }
-                                           
-                                           .quizz {
-                                               display: flex;
-                                               align-items: center;
-                                               flex-direction: column;
-                                               background-color: var(--background-color);
-                                               padding-bottom: 20px;
-                                               padding-top: 20px;
-                                           }
-                                           
-                                           .quizz h2,
-                                           h3 {
-                                               color: var(--text-color);
-                                               margin-bottom: 10px;
-                                               border-bottom: solid var(--text-color);
-                                           }
-                                           
-                                           .quizz label {
-                                               color: var(--text-color);
-                                           }
-                                           
-                                           .button {
-                                               display: flex;
-                                               justify-content: center;
-                                               color: var(--background-color);
-                                               border-radius: 10px;
-                                               margin-top: 20px;
-                                           }
-                                           
-                                           .quizz-reply {
-                                               height: 30px;
-                                               width: auto;
-                                               background-color: var(--background-color);
-                                               color: var(--text-color);
-                                           }
-                                           
-                                           @media screen and (min-width: 768px) {
-                                               .photo-present {
-                                                   height: 100vh;
-                                                   background-image: url("./Images/HarryPotterhero.jpg");
-                                               }
-                                               .photo-text {
-                                                   flex-direction: row;
-                                                   justify-content: space-around;
-                                               }
-                                           }
+:root {
+    --text-color: rgb(219, 169, 136);
+    --background-color: rgb(22, 44, 58);
+    --additional-color: rgba(217, 124, 80, 0.1);
+    --ternary-light: rgba(201, 125, 80, 0.1);
+}
+
+@font-face {
+    font-family: 'YesevaOne';
+    src: url('/Polices/YesevaOne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('/Polices/JosefinSans.ttf') format('truetype');
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--ternary-light);
+}
+
+.photo-present {
+    height: 580px;
+    max-width: 100%;
+    background-image: url("./Images/harryPotterPetit.jpg");
+    background-size: cover;
+    margin-bottom: -1rem;
+}
+
+.present-text {
+    padding-top: 2rem;
+    height: 10rem;
+    background-color: var(--background-color);
+}
+
+.present-text p {
+    margin: 0;
+    font-family: "JosefinSans";
+    color: var(--text-color)
+}
+
+.present-voyage {
+    height: 580px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.photo-text div {
+    height: 360px;
+    width: auto;
+    background-size: cover;
+    margin: 1rem 0 1rem 0;
+}
+
+.photo-text h2 {
+    margin: 0;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-family: 'JosefinSans';
+    color: var(--text-color);
+    background-color: var(--background-color);
+    height: 3rem;
+    border-radius: 5%;
+}
+
+.picture {
+    display: flex;
+    flex-direction: column-reverse;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+form {
+    margin: 20px;
+}
+
+.quizz {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+    padding-bottom: 20px;
+    margin-top: 2rem;
+}
+
+.quizz h2,
+h3 {
+    font-family: "YesevaOne";
+    color: var(--text-color);
+    margin-bottom: 10px;
+    border-bottom: solid var(--text-color);
+}
+
+.quizz label {
+    color: var(--text-color);
+    font-family: "JosefinSans";
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    color: var(--background-color);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.quizz-reply {
+    height: 30px;
+    width: auto;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+    .photo-present {
+        height: 100vh;
+        background-image: url("./Images/HarryPotterhero.jpg");
+    }
+    .photo-text {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
