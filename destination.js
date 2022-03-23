@@ -14,7 +14,7 @@ const textPicture = [
     },
 
     {
-        name: "Step 3 : Christ Church College",
+        name: "Step 3 : Christ Church ",
         picture: "/Images/christChurch.jpg"
     },
 
@@ -34,19 +34,22 @@ function callTextPicture(title, picture) {
     createDiv.classList.add("text-picture")
     target.appendChild(createDiv);
 
-    const createPicture = document.createElement("div");
-    createPicture.classList.add("picture");
-    /* View in Htlm the image rendering */
-    /*createPicture.style.height = "200px";
-    createPicture.style.width = "auto";*/
-    createPicture.style.backgroundImage = `url(${picture})`;
-    createDiv.appendChild(createPicture);
+    const createDivPicture = document.createElement("div");
+    createDivPicture.classList.add("picture");
+    createDivPicture.style.backgroundImage = `url(${picture})`;
+    createDiv.appendChild(createDivPicture);
 
+
+
+    const createDivTitle = document.createElement("div");
+    createDivTitle.classList.add("text");
+    createDiv.appendChild(createDivTitle);
 
     const createTitle = document.createElement("h2");
-    createTitle.classList.add("title");
     createTitle.innerHTML = `${title}`;
-    createPicture.appendChild(createTitle);
+    createDivTitle.appendChild(createTitle);
+
+
 }
 
 for (let el in textPicture) {
@@ -60,28 +63,28 @@ function showResult(r) {
     const quizzReply = document.querySelector(".quizz-reply");
 
     if (r === 0) {
-        quizzTexte = document.createElement("p");
-        quizzTexte.textContent = `Vous avez ${r} bonne réponse... désolé`;
+        quizzTexte = document.createElement("h4");
+        quizzTexte.textContent = `Vous avez ${r} bonne réponse... Partir sur les traces d'Harry vous fera le plus grand bien.`;
         quizzReply.appendChild(quizzTexte);
 
     }
 
     if (r === 1) {
-        quizzTexte = document.createElement("p");
+        quizzTexte = document.createElement("h4");
         quizzTexte.textContent = `Vous avez ${r} bonne réponse. Heureux de vous dire que notre voyage comblera vos attentes`;
         quizzReply.appendChild(quizzTexte);
 
     }
 
     if (r === 2) {
-        quizzTexte = document.createElement("p");
+        quizzTexte = document.createElement("h4");
         quizzTexte.textContent = `Vous avez ${r} bonnes réponses. Pas mal ! -5% sur le prix du voyage grace à ce code : 9-3/4`;
         quizzReply.appendChild(quizzTexte);
 
     }
 
     if (r === 3) {
-        quizzTexte = document.createElement("p");
+        quizzTexte = document.createElement("h4");
         quizzTexte.textContent = `Vous avez ${r} bonnes réponses. Wouhouuuu quel talent ! -10% sur le prix du voyage grace à ce code promo: 7777777`;
         quizzReply.appendChild(quizzTexte);
 

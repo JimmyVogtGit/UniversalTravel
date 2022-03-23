@@ -8,35 +8,28 @@ nextButton.addEventListener("click", () => changeBackground("next"));
 
 function changeBackground(direction){
     const backgroundImage = hero.style.backgroundImage;
-    console.log(backgroundImage,direction)
     if(direction === "previous"){
         if(backgroundImage === 'url("Images/hobbiton.jpg")'){
             hero.style.backgroundImage = 'url("/Images/got-landscape.jpg")';
             hero.style.backgroundPosition = "bottom";
-            console.log(backgroundImage);
         } else if (backgroundImage === 'url("/Images/got-landscape.jpg")'){
             hero.style.backgroundImage = 'url("Images/lac-hp.jpg")';
             hero.style.backgroundPosition = "bottom";
-            console.log(backgroundImage);
         } else if (backgroundImage === 'url("Images/lac-hp.jpg")'){
             hero.style.backgroundImage = 'url("Images/hobbiton.jpg")';
             hero.style.backgroundPosition = "center";
-            console.log(backgroundImage);
         };
     }
     else if(direction === "next"){
         if(backgroundImage === 'url("Images/hobbiton.jpg")'){
             hero.style.backgroundImage = 'url("/Images/got-landscape.jpg")';
             hero.style.backgroundPosition = "bottom";
-            console.log(backgroundImage);
         } else if (backgroundImage === 'url("/Images/got-landscape.jpg")'){
             hero.style.backgroundImage = 'url("Images/lac-hp.jpg")';
             hero.style.backgroundPosition = "bottom";
-            console.log(backgroundImage);
         } else if (backgroundImage === 'url("Images/lac-hp.jpg")'){
             hero.style.backgroundImage = 'url("Images/hobbiton.jpg")';
             hero.style.backgroundPosition = "center";
-            console.log(backgroundImage);
         };
     }
 }

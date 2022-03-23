@@ -53,31 +53,41 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
-.photo-text div {
-    height: 360px;
-    width: auto;
-    background-size: cover;
-    margin: 1rem 0 1rem 0;
-}
-
-.photo-text h2 {
-    margin: 0;
-    padding-top: 1.5rem;
-    text-align: center;
-    font-family: 'JosefinSans';
-    color: var(--text-color);
-    background-color: var(--background-color);
-    height: 3rem;
-    border-radius: 5%;
+.text-picture {
+    margin-bottom: 1rem;
 }
 
 .picture {
+    background-size: cover;
+    height: 360px;
+    background-repeat: no-repeat;
+}
+
+.text {
+    background-color: var(--background-color);
+    font-family: "YesevaOne";
+    color: var(--text-color);
+    height: 3rem;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+.map {
     display: flex;
-    flex-direction: column-reverse;
-    animation-duration: 3s;
-    animation-name: slidein;
+    height: 500px;
+    width: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+iframe {
+    background-size: cover;
+    border-radius: 10%;
+    height: 400px;
+    width: auto;
 }
 
 form {
@@ -86,11 +96,10 @@ form {
 
 .quizz {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     background-color: var(--background-color);
     padding-bottom: 20px;
-    margin-top: 2rem;
 }
 
 .quizz h2,
@@ -107,16 +116,23 @@ h3 {
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    color: var(--background-color);
     border-radius: 10px;
     margin-top: 20px;
 }
 
+input[type="submit"] {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 5%;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(211, 132, 95);
+}
+
 .quizz-reply {
-    height: 30px;
-    width: auto;
+    height: auto;
+    width: 80%;
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -129,5 +145,18 @@ h3 {
     .photo-text {
         flex-direction: row;
         justify-content: space-around;
+    }
+    .map {
+        display: flex;
+        height: 500px;
+        width: auto;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    iframe {
+        background-size: cover;
+        border-radius: 10%;
+        height: 450px;
+        width: 600px;
     }
 }
