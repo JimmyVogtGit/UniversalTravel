@@ -14,7 +14,7 @@ const textPicture = [
     },
 
     {
-        name: "Step 3 : Christ Church College",
+        name: "Step 3 : Christ Church ",
         picture: "/Images/christChurch.jpg"
     },
 
