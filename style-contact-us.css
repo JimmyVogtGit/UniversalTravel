@@ -2,7 +2,7 @@
   --primary-color: #DBA988;
   --secondary-color: #162C3A;
   --secondary-light: rgba(22, 44, 58, 0.8);
-  --ternary-color: #DBA988;
+  --ternary-color: rgb(201, 125, 80);
   --ternary-light: rgba(201, 125, 80, 0.1);
 }
 
@@ -16,13 +16,17 @@
   src: url('/Polices/JosefinSans.ttf') format('truetype');
 }
 
+body {
+  font-family: 'JosefinSans';
+}
+
 main {
   line-height: 2rem;
   max-width: 85ch;
   margin: auto;
 }
 
-h2 {
+.title-specialist {
   font-family: 'JosefinSans';
   font-size: 24px;
   text-align: center;
