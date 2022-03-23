@@ -1,7 +1,7 @@
 :root{
   --text-color: rgb(219,169,136);
-  --primary-color: rgb(22,44,58);
-  --secondary-color: rgba(217,124,80,0.1);
+  --first-color: rgb(22,44,58);
+  --second-color: rgba(217,124,80,0.1);
   --third-color: rgb(217,124,80);
 }
 
@@ -14,20 +14,14 @@
   src: url('/Polices/JosefinSans.ttf') format('truetype');
 }
 
-header {
-  height: 60px;
-  width: auto;
-}
-
 body {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--second-color);
 }
 
 h1 {
   margin-top: 60px;
   padding-top: 60px;
-  color: var(--primary-color);
+  color: var(--first-color);
   text-align: center;
   font-size: 3rem;
 }
@@ -36,7 +30,7 @@ h1 {
   padding-top: 60px;
   margin-left: 20px;
   margin-right: 20px;
-  color: var(--primary-color);
+  color: var(--first-color);
   text-align: center;
   font-size: 1.5rem;
 }
@@ -67,15 +61,14 @@ h1 {
   padding-bottom: 20px;
   border-top-left-radius: 30px;
   height: 150px;
-  width: auto;
-  color: var(--primary-color);
+  color: var(--first-color);
   background-color: var(--third-color);
   text-align: center;
   font-size: 1.5rem;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--first-color);
 }
 
-img {
+.h2Team img {
   position: absolute;
   top: -75px;
   max-height: 150px;
@@ -91,7 +84,7 @@ img {
   border-bottom-right-radius: 30px;
   color: var(--text-color);
   height: auto;
-  background-color: var(--primary-color);
+  background-color: var(--first-color);
   padding: 15px;
   text-align: justify;
 }
@@ -102,13 +95,13 @@ img {
     font-size: 4rem;
   }
 
+  .introducing {
+    font-size: 2rem;
+  }
+
   .team {
     padding-top: 100px;
     flex-direction: row;
-  }
-
-  .introducing {
-    font-size: 2rem;
   }
 
   .storyTeam {
