@@ -55,22 +55,9 @@ body {
     justify-content: space-between;
 }
 
-.photo-text div {
+.picture {
     height: 360px;
-    width: auto;
-    background-size: cover;
-    margin: 1rem 0 1rem 0;
-}
-
-.photo-text h2 {
-    margin: 0;
-    padding-top: 1.5rem;
-    text-align: center;
-    font-family: 'JosefinSans';
-    color: var(--text-color);
-    background-color: var(--background-color);
-    height: 3rem;
-    border-radius: 5%;
+    background-repeat: no-repeat;
 }
 
 .map {
@@ -138,8 +125,8 @@ input[type="submit"]:hover {
 }
 
 .quizz-reply {
-    height: 30px;
-    width: auto;
+    height: auto;
+    width: 80%;
     background-color: var(--background-color);
     color: var(--text-color);
 }

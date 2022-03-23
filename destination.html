@@ -6,19 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="destination.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="script.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="destination.js" defer></script>
     <title>Universal Travel - Destinations</title>
 </head>
 
 <body>
-    <header>
+    <header class="navbar">
+        <img src="Images/Logo-60x60.png" alt="Logo" class="logo" />
+        <label for="input-hamburger" class="hamburger "></label>
+        <input type="checkbox" id="input-hamburger" hidden>
+        <ul class="menu">
+            <li><a href="index.html" class="menu-link">Page d'accueil</a></li>
 
-        <div class="logo">
+            <li class="has-dropdown">
+                <a href="#" class="menu-link">Nos destinations
+              <span class="arrow"></span>
+            </a>
+                <ul class="submenu">
+                    <li><a href="#" class="menu-link">Le Seigneur des Anneaux</a></li>
+                    <li><a href="#" class="menu-link">Star Wars</a></li>
+                    <li><a href="destination.html" class="menu-link">Harry Potter</a></li>
+                </ul>
+            </li>
 
-        </div>
-
+            <li><a href="aboutUs.html" class="menu-link">A propos</a></li>
+            <li><a href="contact-us.html" class="menu-link">Nous contacter</a></li>
+        </ul>
     </header>
 
     <section class="photo-present">
@@ -133,10 +150,20 @@
 
     </section>
 
-
-
     <footer>
-
+        <div class="footer-container">
+            <a href="contact-us.html">Contact</a>
+            <a href="#">Mentions <br />
+            légales</a
+          >
+          <div class="social-icons">
+            <a href="www.facebbok.com"
+              ><img src="Images/social-fb.png" alt="Logo facebook"
+            /></a>
+            <a href="www.twitter.com"><img src="Images/social-twitter.png" alt="Logo twitter" /></a>
+            <a href="www.instagram.com"><img src="Images/social-instagram.png" alt="Logo instagram" /></a>
+        </div>
+        </div>
     </footer>
     <script>
         AOS.init();
