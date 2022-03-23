@@ -60,7 +60,7 @@ const answer2 = document.querySelector("#answer2");
 const answer3 = document.querySelector("#answer3");
 
 
-
+/* Gestion des bouton du quizz */
 
 answer1.onsubmit = function(event) {
     event.preventDefault();
