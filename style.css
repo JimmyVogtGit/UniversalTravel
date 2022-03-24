@@ -111,6 +111,7 @@ html {
   transition: 200ms transform cubic-bezier(0.36, 0.4, 0.42, 1.48) 100ms,
     100ms opacity ease-in-out;
   background-color: var(--secondary-light);
+  overflow-y: scroll;
 }
 
 /* Reveal menu */
@@ -144,6 +145,7 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--secondary-light);
   padding: 1.5em 0;
   min-width: 16em;
+  overflow-y: scroll;
 
   /* Hide submenus */
   opacity: 0;
