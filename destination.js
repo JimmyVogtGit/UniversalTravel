@@ -57,36 +57,61 @@ for (let el in textPicture) {
 }
 
 
-/*********************  Gestion des bouton du quizz ****************************/
+/*********************  Gestion des boutons du quizz ****************************/
 
 function showResult(r) {
     const quizzReply = document.querySelector(".quizz-reply");
 
     if (r === 0) {
-        quizzTexte = document.createElement("h4");
-        quizzTexte.textContent = `Vous avez ${r} bonne réponse... Partir sur les traces d'Harry vous fera le plus grand bien.`;
-        quizzReply.appendChild(quizzTexte);
+        // quizzTexte = document.createElement("h4");
+        // quizzTexte.textContent = `${r} bonne réponse... Partir sur les traces d'Harry vous fera le plus grand bien.`;
+        // quizzReply.appendChild(quizzTexte);
+        Swal.fire({
+            text: `${r} bonne réponse... Partir sur les traces d'Harry vous fera le plus grand bien.`,
+            color: "#DBA988",
+            background: "#162C3A",
+            confirmButtonColor: "#DBA988",
+        })
 
     }
 
     if (r === 1) {
-        quizzTexte = document.createElement("h4");
-        quizzTexte.textContent = `Vous avez ${r} bonne réponse. Heureux de vous dire que notre voyage comblera vos attentes`;
-        quizzReply.appendChild(quizzTexte);
+        // quizzTexte = document.createElement("h4");
+        // quizzTexte.textContent = `${r} bonne réponse. Heureux de vous dire que notre voyage comblera vos attentes`;
+        // quizzReply.appendChild(quizzTexte);
+        Swal.fire({
+            text: `${r} bonne réponse. Heureux de vous dire que notre voyage comblera vos attentes`,
+            color: "#DBA988",
+            background: "#162C3A",
+            confirmButtonColor: "#DBA988",
+        })
+
 
     }
 
     if (r === 2) {
-        quizzTexte = document.createElement("h4");
-        quizzTexte.textContent = `Vous avez ${r} bonnes réponses. Pas mal ! -5% sur le prix du voyage grace à ce code : 9-3/4`;
-        quizzReply.appendChild(quizzTexte);
+        // quizzTexte = document.createElement("h4");
+        // quizzTexte.textContent = `${r} bonnes réponses. -5% sur le prix du voyage grâce à ce code : 9-3/4`;
+        // quizzReply.appendChild(quizzTexte);
+        Swal.fire({
+            text: `${r} bonnes réponses. -5% sur le prix du voyage grâce à ce code : 9-3/4`,
+            color: "#DBA988",
+            background: "#162C3A",
+            confirmButtonColor: "#DBA988",
+        })
 
     }
 
     if (r === 3) {
-        quizzTexte = document.createElement("h4");
-        quizzTexte.textContent = `Vous avez ${r} bonnes réponses. Wouhouuuu quel talent ! -10% sur le prix du voyage grace à ce code promo: 7777777`;
-        quizzReply.appendChild(quizzTexte);
+        // quizzTexte = document.createElement("h4");
+        // quizzTexte.textContent = `${r} bonnes réponses. Wouhouuuu quel Fan ! -10% sur le prix du voyage grâce à ce code promo: 7777777`;
+        // quizzReply.appendChild(quizzTexte);
+        Swal.fire({
+            text: `${r} bonnes réponses. Wouhouuuu quel Fan ! -10% sur le prix du voyage grâce à ce code promo: 7777777`,
+            color: "#DBA988",
+            background: "#162C3A",
+            confirmButtonColor: "#DBA988",
+        })
 
     }
 }
