@@ -198,6 +198,9 @@ input[type="submit"]:hover {
     .text-picture {
         width: 400px;
     }
+    .text {
+        height: auto;
+    }
     .map {
         flex-direction: row;
         justify-content: space-around;
@@ -206,12 +209,17 @@ input[type="submit"]:hover {
     }
     .resume {
         width: 400px;
+        margin-right: 0;
     }
     iframe {
         background-size: cover;
         border-radius: 10%;
         height: 450px;
-        width: 800px;
+        width: 25vw;
+    }
+    .strong-point {
+        width: 10vw;
+        margin-left: 1rem;
     }
     #answer1 {
         width: 500px;
