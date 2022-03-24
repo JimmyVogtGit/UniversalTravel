@@ -31,6 +31,9 @@ body {
 }
 
 .present-text {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
     padding-top: 2rem;
     height: 10rem;
     background-color: var(--background-color);
@@ -42,8 +45,12 @@ body {
     margin: 0;
     font-family: "JosefinSans";
     color: var(--text-color);
-    font-size: 24px;
-    text-align: justify;
+    font-size: 32px;
+    text-align: center
+}
+
+.places p {
+    font-size: 16px;
 }
 
 .present-voyage {
@@ -197,7 +204,7 @@ input[type="submit"]:hover {
     .present-text {
         margin: 0px;
         padding: 0;
-        height: 100px;
+        height: 150px;
     }
     .present-text p {
         text-align: center;
