@@ -41,7 +41,7 @@ html {
   padding: 0 1.5em;
 }
 
-.navbar p {
+.navbar h2 {
   font-family: 'YesevaOne', cursive;
   font-size: 1.5rem;
   color: var(--primary-color);
