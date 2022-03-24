@@ -1,6 +1,5 @@
 function changePic1() {
   document.getElementById("myImg").src = "/Images/Antonio.jpeg";
-
 }
 function changePic2() {
   document.getElementById("myImg").src = "/Images/Legolas.jpg";
@@ -27,8 +26,17 @@ function changePic8() {
   document.getElementById("myImg4").src = "/Images/Harry-Potter.jpg";
 }
 
-/*sélectionner les 3 div chacune dans une variable (querySelector)
+/* Swal.fire({
+  title: 'Do you want to save the changes?',
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: 'Save',
+  denyButtonText: `Don't save`,
+}).then((result) => {
 
-fonction addEventListener qui va se déclencher sur l'action mouseover
-
-(fonction qui va rajouter la classe à la div)
+  if (result.isConfirmed) {
+    Swal.fire('Saved!', '', 'success')
+  } else if (result.isDenied) {
+    Swal.fire('Changes are not saved', '', 'info')
+  }
+}) */

@@ -58,18 +58,14 @@ h1 {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 20px;
   border-top-left-radius: 30px;
+  padding-bottom: 20px;
   height: 150px;
   color: var(--first-color);
   background-color: var(--third-color);
   text-align: center;
   font-size: 1.5rem;
   border: 2px solid var(--first-color);
-}
-
-.h2TeamHover {
-  border-top-right-radius: 30px;
 }
 
 .h2TeamImg {
@@ -84,23 +80,17 @@ h1 {
   border: 2px solid var(--text-color);
 }
 
-.h2TeamImgHover {
-  border-radius: 50%;
-  border-bottom-left-radius: 10%;
-  border-top-right-radius: 10%;
+.h2TeamImg:hover {
+  box-shadow: 0 15px 15px var(--first-color);
 }
 
 .storyTeam {
-  border-bottom-right-radius: 30px;
   color: var(--text-color);
   height: auto;
   background-color: var(--first-color);
+  border-bottom-right-radius: 30px;
   padding: 15px;
   text-align: center;
-}
-
-.storyTeamHover {
-  border-bottom-left-radius: 30px;
 }
 
 @media screen and (min-width: 768px) {
