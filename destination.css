@@ -146,6 +146,9 @@ input[type="submit"]:hover {
         flex-direction: row;
         justify-content: space-around;
     }
+    .text-picture {
+        width: 400px;
+    }
     .map {
         display: flex;
         height: 500px;
