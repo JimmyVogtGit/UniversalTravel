@@ -16,15 +16,8 @@
   font-family: "JosefinSans";
   src: url("/Polices/JosefinSans.ttf") format("truetype");
 }
-h1 {
-  font-family: "YesevaOne", "Times New Roman", Times, serif;
-  font-size: 28px;
-  position: absolute;
-  top:50%;
-  color: var(--text-color);
-  -webkit-text-stroke: 0.005px var(--background-color) ;
-  text-align: center;
-}
+
+
 main {
   background-color: var(--additional-color);
   font-family: "JosefinSans", Georgia, "Times New Roman", Times, serif;
