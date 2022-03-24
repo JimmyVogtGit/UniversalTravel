@@ -126,6 +126,13 @@ iframe {
     width: auto;
 }
 
+#remember {
+    font-family: 'YesevaOne';
+    font-size: 24px;
+    border-bottom: solid 1px var(--background-color);
+    margin-bottom: 1rem;
+}
+
 form {
     margin: 20px;
 }
