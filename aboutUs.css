@@ -40,10 +40,13 @@ h1 {
 
 .team {
   padding-top: 60px;
+  margin-bottom: 60px;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5rem;
   justify-content: space-between;
   gap: 3rem;
 }
@@ -85,6 +88,7 @@ h1 {
 
 .h2TeamImg:hover {
   box-shadow: 0 15px 15px var(--first-color);
+  transition: 0.5s;
 }
 
 h2 {
@@ -100,6 +104,97 @@ h2 {
   text-align: center;
   font-family: 'JosefinSans', sans-serif;
 }
+
+.bannerColored {
+  padding: 60px;
+  background-color: var(--third-color);
+}
+
+.map {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+iframe {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 100%;
+}
+
+#goldBook {
+  margin-top: 100px;
+}
+
+.commentaries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.comment {
+  text-align: justify;
+  padding: 1rem;
+  color: var(--first-color);
+  background-color: var(--third-color);
+  border: 3px solid var(--first-color);
+  border-radius: 10px;
+}
+
+.clients {
+  font-family: 'JosefinSans', sans-serif;
+  font-weight: bold;
+}
+
+#feedback {
+  margin-bottom: 60px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  gap: 0.5rem
+}
+
+.form-container label {
+  font-family: 'JosefinSans', sans-serif;
+  color: var(--secondary-color);
+}
+
+.form-container input, 
+.form-container textarea {
+  font-family: 'JosefinSans', sans-serif;
+  font-size: 20px;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.form-container textarea {
+  height: 5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+#button-submit {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: solid 1px var(--primary-color);
+  border-radius: 20px;
+  width: 190px;
+  cursor: pointer;
+}
+
+
+
 
 @media screen and (min-width: 768px) {
 
@@ -119,5 +214,17 @@ h2 {
   .storyTeam {
     line-height: 1.8em;
     height: auto;
+  }
+
+  .commentaries {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+
+  #contactForm {
+    max-width: 83%;
+    margin: 0 auto;
   }
 }
