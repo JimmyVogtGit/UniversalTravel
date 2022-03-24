@@ -182,6 +182,15 @@ input[type="submit"]:hover {
         height: 100vh;
         background-image: url("./Images/HarryPotterhero.jpg");
     }
+    .present-text {
+        margin: 0px;
+        padding: 0;
+        height: 100px;
+    }
+    .present-text p {
+        text-align: center;
+        padding-top: 40px;
+    }
     .photo-text {
         flex-direction: row;
         justify-content: space-around;
