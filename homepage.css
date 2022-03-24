@@ -16,15 +16,8 @@
   font-family: "JosefinSans";
   src: url("/Polices/JosefinSans.ttf") format("truetype");
 }
-h1 {
-  font-family: "YesevaOne", "Times New Roman", Times, serif;
-  font-size: 28px;
-  position: absolute;
-  top:50%;
-  color: var(--text-color);
-  -webkit-text-stroke: 0.005px var(--background-color) ;
-  text-align: center;
-}
+
+
 main {
   background-color: var(--additional-color);
   font-family: "JosefinSans", Georgia, "Times New Roman", Times, serif;
@@ -190,6 +183,7 @@ main {
 .choose-us h2{
   text-align: center;
   padding: 1rem;
+  color: var(--background-color);
 }
 .card-img-left {
   display: flex;
@@ -237,7 +231,7 @@ main {
   width: 20%;
   height: 100%;
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 768px) {
   /* Hero */
   .hero {
     background-image: url(Images/hobbiton.jpg);
