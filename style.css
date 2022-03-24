@@ -19,6 +19,11 @@ html {
 }
 
 @font-face {
+  font-family: 'YesevaOne';
+  src: url('/Polices/YesevaOne.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'JosefinSans';
   src: url('/Polices/JosefinSans.ttf') format('truetype');
 }
@@ -34,6 +39,13 @@ html {
   position: fixed;
   top: 0;
   padding: 0 1.5em;
+}
+
+.navbar h2 {
+  font-family: 'YesevaOne', cursive;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
 }
 
 .hamburger {
@@ -99,6 +111,7 @@ html {
   transition: 200ms transform cubic-bezier(0.36, 0.4, 0.42, 1.48) 100ms,
     100ms opacity ease-in-out;
   background-color: var(--secondary-light);
+  overflow-y: scroll;
 }
 
 /* Reveal menu */
@@ -119,7 +132,7 @@ input[type="checkbox"]:checked + .menu {
   color: var(--primary-color);
   padding: 1em 1em;
   font-size: 1rem;
-  font-family: 'JosefinSans';
+  font-family: 'JosefinSans', sans-serif;
 }
 
 /* Styling submenu */
@@ -132,6 +145,7 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--secondary-light);
   padding: 1.5em 0;
   min-width: 16em;
+  overflow-y: scroll;
 
   /* Hide submenus */
   opacity: 0;
@@ -160,8 +174,8 @@ input[type="checkbox"]:checked + .menu {
 /* Reveal */
 .menu > li:hover > a + .submenu {
   opacity: 1;
-  transform: scaleY(1);
   position: relative;
+  transform: scaleY(1);
 }
 
 /* Animate arrows */
@@ -184,26 +198,13 @@ input[type="checkbox"]:checked + .menu {
 }
 
 footer > div > a {
-  font-family: 'JosefinSans';
+  font-family: 'JosefinSans', sans-serif;
   text-decoration: none;
   color: var(--primary-color);
   text-align: center;
 }
 
-/* .contact-us,
-.mentions-legales {
-  width: 132px;
-}
-
-.contact-us a,
-.mentions-legales a {
-  font-family: 'JosefinSans';
-  text-decoration: none;
-  color: var(--primary-color);
-  text-align: right;
-} */
-
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 768px) {
   .hamburger {
     display: none;
   }
@@ -217,5 +218,17 @@ footer > div > a {
     left: 0;
     right: 0;
     height: 100%;
+    align-items: center;
+  }
+
+  .menu li a {
+    text-align: center;
+  }
+
+  .submenu li a {
+    text-align: left;
+  }
+  .menu > li:hover > a + .submenu {
+    position: absolute;
   }
 }

@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/JimmyVogtGit/UniversalTravel#readme",
   "dependencies": {
-    "sweetalert2": "^11.4.6",
     "w3c-html-validator": "^1.0.3"
   },
   "description": "",
