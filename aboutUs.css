@@ -68,7 +68,11 @@ h1 {
   border: 2px solid var(--first-color);
 }
 
-.h2Team img {
+.h2TeamHover {
+  border-top-right-radius: 30px;
+}
+
+.h2TeamImg {
   position: absolute;
   top: -75px;
   max-height: 150px;
@@ -80,13 +84,23 @@ h1 {
   border: 2px solid var(--text-color);
 }
 
+.h2TeamImgHover {
+  border-radius: 50%;
+  border-bottom-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
 .storyTeam {
   border-bottom-right-radius: 30px;
   color: var(--text-color);
   height: auto;
   background-color: var(--first-color);
   padding: 15px;
-  text-align: justify;
+  text-align: center;
+}
+
+.storyTeamHover {
+  border-bottom-left-radius: 30px;
 }
 
 @media screen and (min-width: 768px) {

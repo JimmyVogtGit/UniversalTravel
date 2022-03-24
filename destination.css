@@ -53,24 +53,26 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
-.photo-text div {
-    height: 360px;
-    width: auto;
+.text-picture {
+    margin-bottom: 1rem;
+}
+
+.picture {
     background-size: cover;
-    margin: 1rem 0 1rem 0;
+    height: 360px;
+    background-repeat: no-repeat;
 }
 
-.photo-text h2 {
-    margin: 0;
-    padding-top: 1.5rem;
-    text-align: center;
-    font-family: 'JosefinSans';
-    color: var(--text-color);
+.text {
     background-color: var(--background-color);
+    font-family: "YesevaOne";
+    color: var(--text-color);
     height: 3rem;
-    border-radius: 5%;
+    padding-top: 0.5rem;
+    text-align: center;
 }
 
 .map {
@@ -88,21 +90,14 @@ iframe {
     width: auto;
 }
 
-.picture {
-    display: flex;
-    flex-direction: column-reverse;
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-
 form {
     margin: 20px;
 }
 
 .quizz {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     background-color: var(--background-color);
     padding-bottom: 20px;
 }
@@ -121,8 +116,6 @@ h3 {
 }
 
 .button {
-    display: flex;
-    justify-content: center;
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -138,8 +131,8 @@ input[type="submit"]:hover {
 }
 
 .quizz-reply {
-    height: 30px;
-    width: auto;
+    height: auto;
+    width: 80%;
     background-color: var(--background-color);
     color: var(--text-color);
 }
