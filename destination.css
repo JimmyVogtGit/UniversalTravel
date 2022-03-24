@@ -34,12 +34,16 @@ body {
     padding-top: 2rem;
     height: 10rem;
     background-color: var(--background-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .present-text p {
     margin: 0;
     font-family: "JosefinSans";
-    color: var(--text-color)
+    color: var(--text-color);
+    font-size: 24px;
+    text-align: justify;
 }
 
 .present-voyage {
@@ -77,10 +81,35 @@ body {
 
 .map {
     display: flex;
-    height: 500px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 900px;
     width: auto;
     align-items: center;
-    justify-content: space-evenly;
+}
+
+.map p {
+    color: var(--background-color);
+    font-family: 'YesevaOne';
+}
+
+.map li {
+    color: var(--background-color);
+    font-family: 'YesevaOne';
+}
+
+#resume-title {
+    font-family: 'YesevaOne';
+    font-size: 24px;
+    border-bottom: solid 1px var(--background-color);
+    margin-bottom: 1rem;
+}
+
+.resume {
+    text-align: center var(--background-color);
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 iframe {
@@ -153,6 +182,15 @@ input[type="submit"]:hover {
         height: 100vh;
         background-image: url("./Images/HarryPotterhero.jpg");
     }
+    .present-text {
+        margin: 0px;
+        padding: 0;
+        height: 100px;
+    }
+    .present-text p {
+        text-align: center;
+        padding-top: 40px;
+    }
     .photo-text {
         flex-direction: row;
         justify-content: space-around;
@@ -161,17 +199,19 @@ input[type="submit"]:hover {
         width: 400px;
     }
     .map {
-        display: flex;
-        height: 500px;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 600px;
         width: auto;
-        align-items: center;
-        justify-content: space-evenly;
+    }
+    .resume {
+        width: 400px;
     }
     iframe {
         background-size: cover;
         border-radius: 10%;
         height: 450px;
-        width: 600px;
+        width: 800px;
     }
     #answer1 {
         width: 500px;
