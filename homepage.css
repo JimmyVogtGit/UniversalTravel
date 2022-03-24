@@ -19,6 +19,11 @@
 h1 {
   font-family: "YesevaOne", "Times New Roman", Times, serif;
   font-size: 28px;
+  position: absolute;
+  top:50%;
+  color: var(--text-color);
+  -webkit-text-stroke: 0.005px var(--background-color) ;
+  text-align: center;
 }
 main {
   background-color: var(--additional-color);
@@ -117,6 +122,12 @@ main {
   align-items: center;
   justify-content: center;
 }
+
+.discover-button a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 .card-discover1 {
   background-image: url(Images/lotr-argonath.jpg);
   background-size: cover;
@@ -162,10 +173,10 @@ main {
   align-items: center;
   flex-direction: column;
 }
-.presentation h1 {
+.presentation h2 {
   padding: 2rem;
 }
-.presentation h2 {
+.presentation h3 {
   font-size: 24px;
 }
 .quote {
@@ -230,6 +241,10 @@ main {
   /* Hero */
   .hero {
     background-image: url(Images/hobbiton.jpg);
+  }
+
+  .hero h1{
+    font-size: 72px;
   }
   #prev{
     height: 40px;
