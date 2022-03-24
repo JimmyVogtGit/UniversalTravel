@@ -9,6 +9,7 @@
   font-family: 'YesevaOne';
   src: url('/Polices/YesevaOne.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'JosefinSans';
   src: url('/Polices/JosefinSans.ttf') format('truetype');
@@ -19,6 +20,7 @@ body {
 }
 
 h1 {
+  font-family: 'YesevaOne', cursive;
   margin-top: 60px;
   padding-top: 60px;
   color: var(--first-color);
@@ -27,6 +29,7 @@ h1 {
 }
 
 .introducing {
+  font-family: 'YesevaOne', cursive;
   padding-top: 60px;
   margin-left: 20px;
   margin-right: 20px;
@@ -84,6 +87,10 @@ h1 {
   box-shadow: 0 15px 15px var(--first-color);
 }
 
+h2 {
+  font-family: 'YesevaOne', cursive;
+}
+
 .storyTeam {
   color: var(--text-color);
   height: auto;
@@ -91,6 +98,7 @@ h1 {
   border-bottom-right-radius: 30px;
   padding: 15px;
   text-align: center;
+  font-family: 'JosefinSans', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
