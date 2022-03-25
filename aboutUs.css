@@ -242,6 +242,12 @@ iframe {
   .storyTeam {
     line-height: 1.8em;
     height: auto;
+    max-width: 100%;
+  }
+
+  iframe {
+    height: 500px;
+    width: 800px;
   }
 
   .address {
