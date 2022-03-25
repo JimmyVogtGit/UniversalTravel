@@ -26,17 +26,22 @@ function changePic8() {
   document.getElementById("myImg4").src = "/Images/Harry-Potter.jpg";
 }
 
-/* Swal.fire({
-  title: 'Do you want to save the changes?',
-  showDenyButton: true,
-  showCancelButton: true,
-  confirmButtonText: 'Save',
-  denyButtonText: `Don't save`,
-}).then((result) => {
+const message =
+  "Merci pour votre commentaire et à bientôt pour une prochaine aventure !";
 
-  if (result.isConfirmed) {
-    Swal.fire('Saved!', '', 'success')
-  } else if (result.isDenied) {
-    Swal.fire('Changes are not saved', '', 'info')
-  }
-}) */
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    Swal.fire({
+      text: message,
+      title: "Avada Kedavra !",
+      imageUrl: 'Images/Harry-Potter.jpg',
+      imageWidth: 350,
+      imageHeight: 350,
+      imageAlt: 'Custom image',
+      color: '#DBA988',
+      background: '#162C3A',
+      confirmButtonColor : '#DBA988'
+    });
+  });
