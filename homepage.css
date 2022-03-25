@@ -223,7 +223,7 @@ main {
 }
 .card-img-left img {
   border-radius: 50%;
-  width: 20%;
+  width: %;
   height: 100px;
 }
 .card-img-right img {
@@ -344,8 +344,10 @@ main {
 }
 .card-img-left img {
   height: 150px;
+  width: 15%;
 }
 .card-img-right img {
   height: 150px;
+  width: 15%;
 }
 }
