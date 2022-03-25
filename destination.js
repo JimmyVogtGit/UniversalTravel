@@ -5,22 +5,22 @@ const textPicture = [
 
     {
         name: "Step 1 : Gare de KingsCross",
-        picture: "../Images/KingsCross.jpg"
+        picture: "../..Images/KingsCross.jpg"
     },
 
     {
         name: "Step 2 : Millenium Bridge",
-        picture: "../Images/milleniumBridge.jpg"
+        picture: "../..Images/milleniumBridge.jpg"
     },
 
     {
         name: "Step 3 : Christ Church ",
-        picture: "../Images/christChurch.jpg"
+        picture: "../..Images/christChurch.jpg"
     },
 
     {
         name: "Step 4 : Alnwick Castle",
-        picture: "../Images/chateauHp.jpg"
+        picture: "../../Images/chateauHp.jpg"
     }
 
 
