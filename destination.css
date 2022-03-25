@@ -43,7 +43,7 @@ body {
 
 .present-text p {
     margin: 0;
-    font-family: "JosefinSans";
+    font-family: "JosefinSans" sans-serif;
     color: var(--text-color);
     font-size: 32px;
     text-align: center
@@ -79,7 +79,7 @@ body {
 
 .text {
     background-color: var(--background-color);
-    font-family: "YesevaOne";
+    font-family: "YesevaOne" cursive;
     color: var(--text-color);
     height: 3rem;
     padding-top: 0.5rem;
@@ -98,17 +98,17 @@ body {
 
 .map p {
     color: var(--background-color);
-    font-family: 'YesevaOne';
+    font-family: 'JosefinSans' sans-serif;
 }
 
 .map li {
     color: var(--background-color);
-    font-family: 'YesevaOne';
+    font-family: 'JosefinSans' sans-serif;
 }
 
 #resume-title {
-    font-family: 'YesevaOne';
     font-size: 24px;
+    font-family: 'YesevaOne';
     border-bottom: solid 1px var(--background-color);
     margin-bottom: 1rem;
 }
