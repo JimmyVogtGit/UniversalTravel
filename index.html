@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Universal Travel</title>
-  <link href="homepage.css" rel="stylesheet" type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="homepage.js" defer></script>
-  <script src="slideshow-script.js" defer></script>
-  <script src="script.js" defer></script> 
-</head>
-<body>
-  <header class="navbar">
-    <a href="index.html" class="logo-link"><img src="Images/Logo-60x60.png" alt="Logo" class="logo" /></a>
-    <h2>Universal Travel</h2>
-    <label for="input-hamburger" class="hamburger "></label>
-    <input type="checkbox" id="input-hamburger" hidden>
-   
-    <ul class="menu">
-      <li><a href="index.html" class="menu-link">Page d'accueil</a></li>
-      
-      <li class="has-dropdown">
-        <a href="#" class="menu-link">Nos destinations
-          <span class="arrow"></span>
-        </a>
-        <ul class="submenu">
-          <li><a href="#" class="menu-link">Le Seigneur des Anneaux</a></li>
-          <li><a href="#" class="menu-link">Star Wars</a></li>
-          <li><a href="destination.html" class="menu-link">Harry Potter</a></li>
-        </ul>
-      </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universal Travel</title>
+    <link href="homepage.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="homepage.js" defer></script>
+    <script src="slideshow-script.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="index.html" class="logo-link"
+        ><img src="Images/Logo-60x60.png" alt="Logo" class="logo"
+      /></a>
+      <h2>Universal Travel</h2>
+      <label for="input-hamburger" class="hamburger"></label>
+      <input type="checkbox" id="input-hamburger" hidden />
 
-      <li><a href="aboutUs.html" class="menu-link">A propos</a></li>
-      <li><a href="contact-us.html" class="menu-link">Nous contacter</a></li>
-    </ul>
-  </header>
+      <ul class="menu">
+        <li><a href="index.html" class="menu-link">Page d'accueil</a></li>
+
+        <li class="has-dropdown">
+          <a href="#" class="menu-link"
+            >Nos destinations
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="#" class="menu-link">Le Seigneur des Anneaux</a></li>
+            <li><a href="#" class="menu-link">Star Wars</a></li>
+            <li>
+              <a href="destination.html" class="menu-link">Harry Potter</a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="aboutUs.html" class="menu-link">A propos</a></li>
+        <li><a href="contact-us.html" class="menu-link">Nous contacter</a></li>
+      </ul>
+    </header>
 
     <main>
       <div class="hero" style="background-image: url('Images/hobbiton.jpg')">
-        <button id="prev" type="button"><img src="Images/arrow-left.png"></button>
-        <button id="next" type="button"><img src="Images/arrow-right.png"></button>
+        <button id="prev" type="button">
+          <img src="Images/arrow-left.png" alt ="arrow-left" />
+        </button>
+        <button id="next" type="button">
+          <img src="Images/arrow-right.png" alt="arrow-right" />
+        </button>
         <div class="searchbar">
-        <input id="searchbar" type="text" placeholder="Trouvez votre destination">
-        
-        <div class="trait"></div>
-        <button id="loupe" type="button"><img src="Images/loupe.png" alt="search icon"/></button>
+          <input
+            id="searchbar"
+            type="text"
+            placeholder="Trouvez votre destination"
+          />
+
+          <div class="trait"></div>
+          <button id="loupe" type="button">
+            <img src="Images/loupe.png" alt="search icon" />
+          </button>
         </div>
-    </div>
+      </div>
 
       <div class="discover">
         <div class="card-discover1">
-          <div class="discover-button"><a href="destination.html">Découvrir</a></div>
+          <div class="discover-button">
+            <a href="destination.html">Découvrir</a>
+          </div>
         </div>
         <div class="card-discover2">
-          <div class="discover-button"><a href="destination.html">Découvrir</a></div>
+          <div class="discover-button">
+            <a href="destination.html">Découvrir</a>
+          </div>
         </div>
         <div class="card-discover3">
-          <div class="discover-button"><a href="destination.html">Découvrir</a></div>
+          <div class="discover-button">
+            <a href="destination.html">Découvrir</a>
+          </div>
         </div>
       </div>
       <div class="presentation">
@@ -115,10 +136,10 @@
       <div class="footer-container">
         <a href="contact-us.html">Contact</a>
         <a href="#"
-        >Mentions <br />
-        légales
+          >Mentions <br />
+          légales
         </a>
-        
+
         <div class="social-icons">
           <a href="www.facebbok.com"
             ><img src="Images/social-fb.png" alt="Logo facebook"
