@@ -67,9 +67,9 @@ main {
 
 .hero-title{
   width: 50%;
-  color: white;
+  color: var(--text-color);
   font-size: 24px;
-  background-color: rgba(22, 44, 58, 0.55);
+  background-color: rgba(22, 44, 58, 0.9);
   text-shadow: 0 0 10px #FFFFFF;
   top: 30%;
   position: absolute;
@@ -92,10 +92,6 @@ main {
   align-items: center;
 }
 
-.searchbar::placeholder{
-  color:rgb(219, 169, 136);
-  text-shadow: 0 0 10px #FFFFFF;
-}
 
 #searchbar {
   background-color: var(--background-color);
