@@ -43,5 +43,12 @@ document
       color: '#DBA988',
       background: '#162C3A',
       confirmButtonColor : '#DBA988'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const inputs = document.querySelectorAll(".input");
+        for (let input of inputs) {
+          input.value = '';
+        }
+      }
     });
   });
