@@ -110,7 +110,31 @@ h2 {
   background-color: var(--third-color);
 }
 
+.address {
+  display: flex;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid var(--first-color);
+  border-radius: 30px;
+  background-color: var(--text-color);
+  font-family: 'JosefinSans', sans-serif;
+  padding: 1rem;
+}
+
+#agency {
+  font-weight: bold;
+}
+
+.address ul li {
+  list-style-type: none;
+}
+
 .map {
+  display: flex;
   margin-top: 100px;
   margin-bottom: 60px;
 }
@@ -139,7 +163,7 @@ iframe {
   padding: 1rem;
   color: var(--first-color);
   background-color: var(--third-color);
-  border: 3px solid var(--first-color);
+  border: 2px solid var(--first-color);
   border-radius: 10px;
 }
 
@@ -224,7 +248,7 @@ iframe {
   }
 
   #contactForm {
-    max-width: 83%;
+    max-width: 85%;
     margin: 0 auto;
   }
 }
