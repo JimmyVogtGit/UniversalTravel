@@ -56,6 +56,7 @@ form.onsubmit = function (event) {
   newToAdd.appendChild(newSpace);
   newToAdd.appendChild(newComment);
   commentaries.appendChild(newToAdd);
+};
 
   // document
   // .getElementById("contactForm")
@@ -80,4 +81,3 @@ form.onsubmit = function (event) {
   //     }
   //   });
   // });
-};
