@@ -188,6 +188,7 @@ input[type="checkbox"]:checked + .menu {
   align-items: center;
   height: 60px;
   background-color: var(--secondary-color);
+  text-align: center;
 }
 
 .social-icons {
@@ -195,11 +196,10 @@ input[type="checkbox"]:checked + .menu {
     gap: 1.5rem;
 }
 
-footer > div > a {
+.footer-container > div > a {
   font-family: 'JosefinSans', sans-serif;
   text-decoration: none;
   color: var(--primary-color);
-  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -226,7 +226,12 @@ footer > div > a {
   .submenu li a {
     text-align: left;
   }
+  
   .menu > li:hover > a + .submenu {
     position: absolute;
+  }
+
+  .footer-container > div {
+    width: 132px;
   }
 }
