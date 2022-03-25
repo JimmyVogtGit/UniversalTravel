@@ -162,6 +162,7 @@ iframe {
 
 .comment {
   text-align: justify;
+  height: 250px;
   padding: 1rem;
   color: var(--first-color);
   background-color: var(--third-color);
