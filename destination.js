@@ -10,17 +10,17 @@ const textPicture = [
 
     {
         name: "Step 2 : Millenium Bridge",
-        picture: "../..Images/milleniumBridge.jpg"
+        picture: "./Images/milleniumBridge.jpg"
     },
 
     {
         name: "Step 3 : Christ Church ",
-        picture: "../..Images/christChurch.jpg"
+        picture: "./Images/christChurch.jpg"
     },
 
     {
         name: "Step 4 : Alnwick Castle",
-        picture: "../../Images/chateauHp.jpg"
+        picture: "./Images/chateauHp.jpg"
     }
 
 
