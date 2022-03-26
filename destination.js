@@ -5,7 +5,7 @@ const textPicture = [
 
     {
         name: "Step 1 : Gare de KingsCross",
-        picture: ".Images/KingsCross.jpg"
+        picture: "./Images/KingsCross.jpg"
     },
 
     {
