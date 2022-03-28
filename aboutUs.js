@@ -1,29 +1,29 @@
 function changePic1() {
-  document.getElementById("myImg").src = "/Images/Antonio.jpeg";
+  document.getElementById("myImg").src = "./Images/Antonio.jpeg";
 }
 function changePic2() {
-  document.getElementById("myImg").src = "/Images/Legolas.jpg";
+  document.getElementById("myImg").src = "./Images/Legolas.jpg";
 }
 
 function changePic3() {
-  document.getElementById("myImg2").src = "/Images/JV.jpeg";
+  document.getElementById("myImg2").src = "./Images/JV.jpeg";
 }
 function changePic4() {
-  document.getElementById("myImg2").src = "/Images/Anakin-Skywalker.jpg";
+  document.getElementById("myImg2").src = "./Images/Anakin-Skywalker.jpg";
 }
 
 function changePic5() {
-  document.getElementById("myImg3").src = "/Images/pj.jpeg";
+  document.getElementById("myImg3").src = "./Images/pj.jpeg";
 }
 function changePic6() {
-  document.getElementById("myImg3").src = "/Images/Khal-Drogo.jpg";
+  document.getElementById("myImg3").src = "./Images/Khal-Drogo.jpg";
 }
 
 function changePic7() {
-  document.getElementById("myImg4").src = "/Images/profil-ym.jpg";
+  document.getElementById("myImg4").src = "./Images/profil-ym.jpg";
 }
 function changePic8() {
-  document.getElementById("myImg4").src = "/Images/Harry-Potter.jpg";
+  document.getElementById("myImg4").src = "./Images/Harry-Potter.jpg";
 }
 
 const message =
